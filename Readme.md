@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Olga Buianova](https://up.htmlacademy.ru/adaptive/23/user/1584633).
-* Наставник: `Сергей Артёмов`.
+* Наставник: `Сергей Артёмов https://htmlacademy.ru/profile/firefoxic`.
 
 ---
 
