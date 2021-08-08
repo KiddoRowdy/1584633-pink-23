@@ -2,23 +2,23 @@
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
-  color: var(--basic-blue);
+  color: $basic-blue;
 }
 
 .contacts-title {
   font-size: 18px;
   line-height: 25px;
-  color: var(--basic-blue);
+  color: $basic-blue;
 }
 
 .contacts-text {
   font-size: 24px;
   font-weight: 300;
   line-height: 32px;
-  color: var(--basic-pink);
+  color: $basic-pink;
 }
 
 .contacts-text a {
-  color: var(--basic-pink);
+  color: $basic-pink;
   text-decoration: none;
 }

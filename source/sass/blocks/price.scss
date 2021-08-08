@@ -1,10 +1,10 @@
 .price {
-  background-color: var(--basic-grey);
+  background-color: $basic-grey;
 }
 
 .price__table-row-head {
-  background-color: var(--basic-blue);
-  color: var(--basic-white);
+  background-color: $basic-blue;
+  color: $basic-white;
   text-transform: uppercase;
 }
 
@@ -20,5 +20,5 @@
 .price__table-column {
   font-size: 14px;
   font-weight: 400;
-  color: var(--basic-blue);
+  color: $basic-blue;
 }

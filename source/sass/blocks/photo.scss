@@ -2,20 +2,20 @@
   font-size: 12px;
   font-weight: 700;
   line-height: 24px;
-  color: var(--basic-white);
+  color: $basic-white;
   text-transform: uppercase;
-  background-color: var(--basic-pink);
+  background-color: $basic-pink;
 }
 
 .photo__block {
-  background-color: var(--basic-grey);
+  background-color: $basic-grey;
 }
 
 .photo__link {
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
-  color: var(--basic-blue);
+  color: $basic-blue;
   text-decoration: none;
 }
 
@@ -29,14 +29,14 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  color: var(--basic-blue);
+  color: $basic-blue;
 }
 
 .photo__likes {
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
-  color: var(--basic-pink);
+  color: $basic-pink;
   text-transform: uppercase;
 }
 

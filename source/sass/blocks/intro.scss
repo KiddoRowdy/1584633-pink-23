@@ -1,7 +1,7 @@
 .intro {
-  color: var(--basic-white);
-  background-image: url("source/img/back-mobile.jpg");
-  background-color: var(--basic-blue);
+  color: $basic-white;
+  background-image: url("img/back-mobile.jpg");
+  background-color: $basic-blue;
 }
 
 .intro__header {
@@ -16,12 +16,12 @@
 }
 
 .intro-link {
-  color: var(--basic-white);
+  color: $basic-white;
   text-decoration: none;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-  border: 3px solid var(--basic-white);
+  border: 3px solid $basic-white;
   border-radius: 29px;
 }
 

@@ -6,15 +6,15 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  color: var(--basic-pink);
+  color: $basic-pink;
   text-transform: uppercase;
 }
 
 .comments__submit {
   font-size: 18px;
   font-weight: 700;
-  color: var(--basic-white);
-  background-color: var(--basic-green);
+  color: $basic-white;
+  background-color: $basic-green;
   text-transform: uppercase;
   border: none;
 }
@@ -22,10 +22,10 @@
 .comments__important {
   font-size: 14px;
   font-weight: 400;
-  color: var(--basic-blue);
+  color: $basic-blue;
   text-transform: uppercase;
 }
 
 .comments__important-star {
-  color: var(--basic-pink);
+  color: $basic-pink;
 }
