@@ -1,0 +1,43 @@
+.intro {
+  color: var(--basic-white);
+  background-image: url("source/img/back-mobile.jpg");
+  background-color: var(--basic-blue);
+}
+
+.intro__header {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.intro__header-index {
+  line-height: 29px;
+}
+
+.intro-link {
+  color: var(--basic-white);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  border: 3px solid var(--basic-white);
+  border-radius: 29px;
+}
+
+.intro__item::marker {
+  font-size: 0;
+}
+
+.intro__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  margin: 0;
+}
+
+/*Form*/
+
+.intro__header-form {
+  line-height: 33px;
+}

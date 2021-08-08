@@ -1,0 +1,25 @@
+.story-check {
+  background-color: var(--basic-grey);
+}
+
+.story-check__fieldset {
+  border: none;
+}
+
+.story-check__headline {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--basic-pink);
+  text-transform: uppercase;
+}
+
+.story-check__list {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--basic-blue);
+}
+
+.story-check__item::marker {
+  font-size: 0;
+}

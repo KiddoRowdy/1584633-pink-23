@@ -1,0 +1,25 @@
+.app {
+  background-color: var(--basic-grey);
+}
+
+.app__fieldset {
+  border: none;
+}
+
+.app__headline {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--basic-pink);
+  text-transform: uppercase;
+}
+
+.app__item {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--basic-blue);
+}
+
+.app__item::marker {
+  font-size: 0;
+}

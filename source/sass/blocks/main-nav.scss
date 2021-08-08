@@ -1,0 +1,11 @@
+.main-nav__item a {
+  color: var(--basic-white);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.main-nav__item::marker {
+  font-size: 0;
+}

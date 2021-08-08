@@ -1,0 +1,18 @@
+.advantages {
+  background-color: var(--basic-grey);
+}
+
+.advantages__item::marker {
+  font-size: 0;
+}
+
+.advantages__title {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.advantages__description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}

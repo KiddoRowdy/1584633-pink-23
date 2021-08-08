@@ -1,0 +1,20 @@
+.post {
+  background-color: var(--basic-grey);
+}
+
+.post__button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  border-radius: 30px;
+}
+
+.post__button__button-send {
+  color: var(--basic-pink);
+  border: 3px solid var(--basic-pink);
+}
+
+.post__button__button-cancel {
+  color: var(--basic-blue);
+  border: 3px solid var(--basic-blue);
+}
