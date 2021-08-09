@@ -1,10 +1,17 @@
-.contacts__fieldset {
-  border: none;
+.contacts-title {
+  font-size: 18px;
+  line-height: 25px;
+  color: $basic-blue;
 }
 
-.contacts__field {
-  font-size: 14px;
-  font-weight: 400;
+.contacts-text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
   color: $basic-pink;
-  text-transform: uppercase;
+}
+
+.contacts-text a {
+  color: $basic-pink;
+  text-decoration: none;
 }
