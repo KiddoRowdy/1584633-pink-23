@@ -1,8 +1,32 @@
 .intro {
   color: $basic-white;
-  background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-color: $basic-blue;
+  outline: 5px solid rgba(255, 174, 0, 0.8);
+  outline-offset: -5px;
+  width: 320px;
+  height: 733px;
+  margin: 100px auto;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 853px;
+  }
+}
+
+.intro__opening {
+  background-image: url("../../img/back-mobile.jpg");
+  width: 320px;
+  height: 396px;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    background-image: url(../../img/back-tablet.jpg);
+  }
 }
 
 .intro__header {
@@ -42,3 +66,20 @@
 .intro__header-form {
   line-height: 33px;
 }
+/*
+.page-header {
+  text-transform: uppercase;
+  background-color: $basic-blue;
+  display: flex;
+  justify-content: space-between;
+  height: 66px;
+
+  @media (min-width: $tablet-width) {
+    height: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 110px;
+  }
+}
+*/

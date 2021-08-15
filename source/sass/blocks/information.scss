@@ -4,3 +4,8 @@
   font-weight: 300;
   color: $basic-blue;
 }
+
+.information {
+  outline: 5px solid rgba(225, 0, 255, 0.8);
+  outline-offset: -5px;
+}

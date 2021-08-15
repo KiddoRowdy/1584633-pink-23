@@ -9,3 +9,34 @@
 .main-nav__item::marker {
   font-size: 0;
 }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__wrapper {
+  outline: 5px solid rgba(0, 238, 255, 0.8);
+  outline-offset: -5px;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: 660px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    display: flex;
+    margin: 0 auto;
+    width: 760px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
