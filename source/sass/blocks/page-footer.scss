@@ -4,3 +4,36 @@
   font-weight: 300;
   color: $basic-blue;
 }
+
+.page-footer {
+  width: 320px;
+  height: 898px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+
+    .page-footer__contacts {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+
+    .page-footer__contacts {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.page-footer__bottom {
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 127px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

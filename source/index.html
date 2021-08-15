@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body class="page__body">
@@ -13,7 +14,7 @@
       <img src="img/logotype-mobile.svg" width="74" height="23" alt="Pink - Взгляните на жизнь иначе">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="main-nav__toggle" type="button"><span class="page__hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item main-nav__item--active">
@@ -42,7 +43,7 @@
   </header>
 
   <main class="page-main">
-    <h1 class="visually-hidden">Pink-Взгляните на жизнь иначе!</h1>
+    <h1 class="page__hidden">Pink-Взгляните на жизнь иначе!</h1>
     <section class="intro">
       <div class="intro__opening">
         <h2 class="intro__header intro__header-index">Взгляните на жизнь иначе!</h2>
@@ -60,10 +61,10 @@
     </section>
 
     <section class="information">
-      <h2 class="visually-hidden">О нас</h2>
+      <h2 class="page__hidden">О нас</h2>
       <p class="information__slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
       <div class="advantages">
-        <h2 class="visually-hidden">Наши преимущества</h2>
+        <h2 class="page__hidden">Наши преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--mood">
             <h3 class="advantages__title">Поднимает настроение</h3>
@@ -81,18 +82,22 @@
               новых</p>
           </li>
         </ul>
+        <img class="information__img" src="../source/img/iphone-inform.png" alt="Телефон: всем привет">
       </div>
     </section>
 
     <section class="science-info">
-      <h3 class="science-info__title">Эффект на 24 часа!</h3>
-      <p class="science-info__text">Британские ученые провели исследования и доказали, что положительный эффект от
-        использования приложения длится целые сутки!</p>
-      <a class="science-info__link" href="#">Узнать больше об исследовании</a>
+      <img class="science-info__img" src="../source/img/timer.png" alt="Таймер" width="238" height="276">
+      <div class="sciene-info__block">
+        <h3 class="science-info__title">Эффект на 24 часа!</h3>
+        <p class="science-info__text">Британские ученые провели исследования и доказали, что положительный эффект от
+          использования приложения длится целые сутки!</p>
+        <a class="science-info__link" href="#">Узнать больше об исследовании</a>
+      </div>
     </section>
 
     <section class="reviews">
-      <h2 class="visually-hidden">Отзывы</h2>
+      <h2 class="page__hidden">Отзывы</h2>
       <div class="reviews__wrapper slider">
         <blockquote class="reviews__item slider__item">
           <div class="reviews__author-info">
@@ -112,7 +117,7 @@
     </section>
 
     <section class="price slider">
-      <h2 class="visually-hidden">Тарифы</h2>
+      <h2 class="page__hidden">Тарифы</h2>
       <table class="price__table">
         <tr class="price__table-row price__table-row-head">
           <th class="price__table-column-head"></th>
@@ -152,37 +157,40 @@
     <p class="page-footer__text">Остались вопросы? Свяжитесь с нами!</p>
     <div class="page-footer__wrapper">
       <div class="page-footer__contacts">
-        <b class="contacts-title">Звоните:</b>
         <p class="contacts-text">
+          <b class="contacts-title">Звоните:</b>
           <a class="contacts-phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </p>
-        <b class="contacts-title">Пишите:</b>
         <p class="contacts-text">
+          <b class="contacts-title">Пишите:</b>
           <a href="malito:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
-        <b class="contacts-title">Приезжайте в гости:</b>
-        <p class="contacts-text">ул. Большая Конюшенная, 19/8</p>
+        <p class="contacts-text">
+          <b class="contacts-title">Приезжайте в гости:</b> ул. Большая Конюшенная, 19/8</p>
       </div>
       <div class="map"></div>
-      <a class="page-footer__logo">
-        <img src="img/logotype-mobile-footer.svg" width="145" height="40" alt="Pink - Взгляните на жизнь иначе">
-      </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Мы в Twitter</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Мы в Youtube</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="page-footer__bottom">
+        <a class="page-footer__logo">
+          <img src="img/logotype-mobile-footer.svg" width="145" height="40" alt="Pink - Взгляните на жизнь иначе">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">Мы в Twitter</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
+                Facebook</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">Мы в Youtube</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
       </div>
     </div>
   </footer>

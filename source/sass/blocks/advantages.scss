@@ -1,5 +1,19 @@
 .advantages {
   background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+
+    .advantages__list {
+      display: flex;
+      flex-direction: row;
+    }
+  }
 }
 
 .advantages__item::marker {

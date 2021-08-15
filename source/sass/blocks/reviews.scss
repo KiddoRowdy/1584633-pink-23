@@ -2,6 +2,15 @@
   font-size: 18px;
   font-weight: 700;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.reviews__author-info {
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__text {
@@ -13,4 +22,17 @@
 .reviews {
   outline: 5px solid rgba(229, 255, 0, 0.8);
   outline-offset: -5px;
+  margin: 0 auto;
+  height: 364px;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 405px;
+  }
 }

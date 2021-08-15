@@ -19,24 +19,22 @@
   outline: 5px solid rgba(0, 238, 255, 0.8);
   outline-offset: -5px;
   width: 320px;
-}
 
-@media (min-width: $tablet-width) {
-  .main-nav__wrapper {
+  @media (min-width: $tablet-width) {
     display: flex;
     margin: 0 auto;
     width: 660px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .main-nav__wrapper {
+  @media (min-width: $desktop-width) {
     display: flex;
     margin: 0 auto;
     width: 760px;
   }
+}
 
-  .main-nav__toggle {
+.main-nav__toggle {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }

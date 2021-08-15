@@ -4,3 +4,8 @@
   font-family: "Open Sans", sans-serif;
   line-height: 30px;
 }
+
+.page__hidden {
+  position: absolute;
+  transform: scale(0);
+}
