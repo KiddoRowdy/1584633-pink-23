@@ -4,19 +4,14 @@
   background-repeat: no-repeat;
   background-image: url("../../img/back-mobile.jpg");
   background-color: $basic-blue;
-  width: 320px;
   height: 733px;
 
   @media (min-width: $tablet-width) {
-    width: 660px;
     background-image: url("../../img/back-tablet.jpg");
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 1200px;
     height: 853px;
-    padding-left: 130px;
-    padding-right: 130px;
     background-image: url("../../img/back-desktop.jpg");
   }
 }

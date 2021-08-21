@@ -16,16 +16,12 @@
 }
 
 .main-nav__wrapper {
-  width: 320px;
-
   @media (min-width: $tablet-width) {
     display: flex;
-    width: 660px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    width: 760px;
   }
 }
 

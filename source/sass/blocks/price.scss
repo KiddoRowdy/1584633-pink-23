@@ -1,18 +1,10 @@
 .price {
   order: 5;
   background-color: $basic-grey;
-  width: 320px;
   height: 506px;
 
-  @media (min-width: $tablet-width) {
-    width: 660px;
-  }
-
   @media (min-width: $desktop-width) {
-    width: 1200px;
     height: 534px;
-    margin-left: 130px;
-    margin-right: 130px;
   }
 }
 

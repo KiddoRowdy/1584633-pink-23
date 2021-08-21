@@ -3,18 +3,13 @@
   background-color: $basic-blue;
   display: flex;
   justify-content: space-between;
-  width: 320px;
   height: 66px;
 
   @media (min-width: $tablet-width) {
-    width: 660px;
     height: 110px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
     height: 110px;
-    padding-left: 130px;
-    padding-right: 130px;
   }
 }

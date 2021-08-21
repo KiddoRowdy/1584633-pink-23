@@ -9,11 +9,6 @@
     border: 2px solid $special-grey-border;
     border-radius: 1px;
   }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 130px;
-    margin-right: 130px;
-  }
 }
 
 .comments__field {

@@ -1,22 +1,18 @@
 .post {
   order: 3;
   background-color: $basic-grey;
-  width: 320px;
   height: 757px;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    width: 660px;
     height: 511px;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    width: 940px;
+    width: 960px;
     height: 514px;
-    margin-left: 130px;
-    margin-right: 130px;
   }
 }
 

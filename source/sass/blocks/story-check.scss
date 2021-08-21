@@ -1,19 +1,11 @@
 .story-check {
   order: 4;
   background-color: $basic-grey;
-  width: 320px;
   height: 604px;
 
   @media (min-width: $tablet-width) {
     order: 6;
     background-color: $basic-white;
-    width: 660px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
-    margin-left: 130px;
-    margin-right: 130px;
   }
 }
 
@@ -23,6 +15,7 @@
   @media (min-width: $tablet-width) {
     border: 2px solid $special-grey-border;
     border-radius: 1px;
+    padding: 0;
   }
 }
 
@@ -40,8 +33,8 @@
   color: $basic-blue;
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
     display: flex;
+    flex-wrap: wrap;
   }
 }
 

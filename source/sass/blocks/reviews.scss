@@ -22,17 +22,12 @@
 .reviews {
   order: 4;
   height: 364px;
-  width: 320px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    width: 660px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
     height: 405px;
-    margin-left: 130px;
-    margin-right: 130px;
   }
 }
