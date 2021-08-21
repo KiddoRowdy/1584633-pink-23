@@ -6,9 +6,7 @@
 }
 
 .information {
-  outline: 5px solid rgba(225, 0, 255, 0.8);
-  outline-offset: -5px;
-  margin: 0 auto;
+  order: 2;
   width: 320px;
   height: 828px;
 
@@ -20,6 +18,8 @@
   @media (min-width: $desktop-width) {
     width: 1200px;
     height: 933px;
+    margin-left: 130px;
+    margin-right: 130px;
   }
 
   .information__img {

@@ -1,5 +1,15 @@
-.story__intro {
-  font-size: 14px;
-  font-weight: 400;
-  color: $basic-blue;
+.story {
+  order: 3;
+  width: 320px;
+  height: 563px;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 435px;
+    margin-left: 130px;
+    margin-right: 130px;
+  }
 }

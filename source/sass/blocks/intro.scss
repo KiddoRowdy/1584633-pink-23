@@ -1,13 +1,11 @@
 .intro {
+  order: 1;
   color: $basic-white;
   background-repeat: no-repeat;
   background-image: url("../../img/back-mobile.jpg");
   background-color: $basic-blue;
-  outline: 5px solid rgba(255, 174, 0, 0.8);
-  outline-offset: -5px;
   width: 320px;
   height: 733px;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 660px;
@@ -15,8 +13,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    min-width: 1200px;
     height: 853px;
+    padding-left: 130px;
+    padding-right: 130px;
     background-image: url("../../img/back-desktop.jpg");
   }
 }
@@ -57,4 +57,9 @@
 
 .intro__header-form {
   line-height: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }

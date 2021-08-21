@@ -1,8 +1,6 @@
 .price {
+  order: 5;
   background-color: $basic-grey;
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
-  margin: 0 auto;
   width: 320px;
   height: 506px;
 
@@ -13,6 +11,8 @@
   @media (min-width: $desktop-width) {
     width: 1200px;
     height: 534px;
+    margin-left: 130px;
+    margin-right: 130px;
   }
 }
 

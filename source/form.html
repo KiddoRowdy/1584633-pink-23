@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body class="page__body">
@@ -47,9 +48,12 @@
       <h2 class="intro__header intro__header-form">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </section>
 
+    <section class="story-intro">
+    <p class="story-intro__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную
+      карту!</p>
+    </section>
+
     <section class="story">
-      <p class="story__intro">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную
-        карту!</p>
       <h2 class="page__hidden">Контактные данные</h2>
       <form class="story-form" action="https://echo.htmlacademy.ru">
         <p class="story-form__field">
@@ -67,6 +71,28 @@
       </form>
     </section>
 
+    <section class="app">
+      <h2 class="page__hidden">Операционная система вашего телефона</h2>
+      <form class="app__form" method="GET" action="https://echo.htmlacademy.ru">
+        <fieldset class="app__fieldset">
+        <legend class="app__headline">С каким приложением путешествовали?</legend>
+        <ul class="app__list">
+          <li class="app__item">
+            <input type="radio" id="ios" name="ios" value="ios" checked>
+            <label for="ios">Pink для iOS</label>
+          </li>
+          <li class="app__item">
+            <input type="radio" id="android" name="android" value="android">
+            <label for="android">Pink на Android</label>
+          </li>
+          <li class="app__item">
+            <input type="radio" id="windows-phone" name="windows-phone" value="windows-phone">
+            <label for="windows-phone">Windows Phone</label>
+          </li>
+        </ul>
+      </fieldset>
+      </form>
+    </section>
     <section class="story-check">
       <h2 class="page__hidden">Отметьте ваше сумасшедшее путешествие</h2>
       <form class="story-check__form" method="GET" action="https://echo.htmlacademy.ru">
@@ -106,7 +132,7 @@
       <h2 class="page__hidden">Форма контактов</h2>
       <form class="application__form" action="https://echo.htmlacademy.ru">
         <fieldset class="application__fieldset">
-          <legend class="page__hidden">Контакты</legend>
+          <legend class="application__legend">Контактная информация</legend>
         <p class="application__field">
           <label for="application__field-phone">Номер телефона:</label>
           <input id="application__field-phone" type="text" placeholder="Номер, пожалуйста" aria-label="Номер телефона">
@@ -119,29 +145,6 @@
       </form>
     </section>
 
-    <section class="app">
-      <h2 class="page__hidden">Операционная система вашего телефона</h2>
-      <form class="app__form" method="GET" action="https://echo.htmlacademy.ru">
-        <fieldset class="app__fieldset">
-        <legend class="app__headline">С каким приложением путешествовали?</legend>
-        <ul class="app__list">
-          <li class="app__item">
-            <input type="radio" id="ios" name="ios" value="ios" checked>
-            <label for="ios">Pink для iOS</label>
-          </li>
-          <li class="app__item">
-            <input type="radio" id="android" name="android" value="android">
-            <label for="android">Pink на Android</label>
-          </li>
-          <li class="app__item">
-            <input type="radio" id="windows-phone" name="windows-phone" value="windows-phone">
-            <label for="windows-phone">Windows Phone</label>
-          </li>
-        </ul>
-      </fieldset>
-      </form>
-    </section>
-
     <section class="comments">
       <h2 class="page__hidden">Комментарии</h2>
       <form class="comments__form" method="GET" action="https://echo.htmlacademy.ru">
@@ -149,7 +152,7 @@
         <legend class="comments__headline">Опишите свои эмоции</legend>
         <p class="comments__field">
           <label for="comments__text"></label>
-          <input id="comments__text" type="text" placeholder="Можно прям в красках, не стесняясь в выражениях" aria-label="Комментарии">
+          <input class="comments__input" id="comments__text" type="text" placeholder="Можно прям в красках, не стесняясь в выражениях" aria-label="Комментарии">
           <input class="comments__submit" type="submit" value="Отправить форму">
         </p>
         <p class="comments__important">

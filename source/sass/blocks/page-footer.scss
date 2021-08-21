@@ -8,7 +8,6 @@
 .page-footer {
   width: 320px;
   height: 898px;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 660px;
@@ -21,6 +20,8 @@
 
   @media (min-width: $desktop-width) {
     width: 1200px;
+    margin-left: 130px;
+    margin-right: 130px;
 
     .page-footer__contacts {
       display: flex;

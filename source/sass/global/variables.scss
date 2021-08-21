@@ -1,13 +1,14 @@
-$basic-blue: #1d2631;
-$basic-grey: #f2f2f2;
-$basic-pink: #d22856;
-$basic-black: #000000;
-$basic-white: #ffffff;
-$basic-green: #2aab6d;
+$basic-blue: hsla(213, 26%, 15%, 1);
+$basic-grey: hsla(0, 0%, 95%, 1);
+$basic-pink: hsla(344, 68%, 49%, 1);
+$basic-black: hsla(0, 0%, 0%, 1);
+$basic-white: hsla(0, 0%, 100%, 1);
+$basic-green: hsla(151, 61%, 42%, 1);
 
-$special-blue: #283645;
-$special-grey-smile: #dedede;
-
+$special-blue: hsla(211, 27%, 21%, 1);
+$special-grey-timer: hsla(0, 0%, 87%, 1);
+$special-grey-border: hsla(0, 0%, 95%, 1);
+$special-modal-shadow: rgba(0, 1, 1, 0.15);
 // Viewports
 
 $tablet-width: 660px;

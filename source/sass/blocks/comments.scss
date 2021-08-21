@@ -1,5 +1,24 @@
+.comments {
+  order: 7;
+}
+
 .comments__fieldset {
   border: none;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $special-grey-border;
+    border-radius: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+}
+
+.comments__field {
+  display: flex;
+  flex-direction: column;
 }
 
 .comments__headline {
@@ -17,6 +36,7 @@
   background-color: $basic-green;
   text-transform: uppercase;
   border: none;
+  width: 276px;
 }
 
 .comments__important {
@@ -28,4 +48,17 @@
 
 .comments__important-star {
   color: $basic-pink;
+}
+
+.comments__input {
+  height: 197px;
+  width: 276px;
+
+  @media (min-width: $tablet-width) {
+    width: 496px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 816px;
+  }
 }

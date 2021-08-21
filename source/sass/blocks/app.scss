@@ -1,9 +1,24 @@
 .app {
+  order: 6;
   background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 431px;
+  }
 }
 
 .app__fieldset {
   border: none;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid $special-grey-border;
+    border-radius: 1px;
+  }
 }
 
 .app__headline {
