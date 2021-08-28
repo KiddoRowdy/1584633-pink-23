@@ -1,6 +1,6 @@
 .page-header {
   text-transform: uppercase;
-  background-color: $basic-blue;
+  background-color: $basic-black;
   display: flex;
   justify-content: space-between;
   height: 66px;
@@ -11,5 +11,24 @@
 
   @media (min-width: $desktop-width) {
     height: 110px;
+  }
+}
+
+.page-header__logo {
+  height: 23px;
+  text-align: left;
+}
+
+.page-header__logo img {
+  width: 74px;
+  height: 23px;
+  padding: 22px 0 21px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 0 43px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 44px 0 43px 130px;
   }
 }

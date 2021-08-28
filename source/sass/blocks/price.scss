@@ -2,16 +2,39 @@
   order: 5;
   background-color: $basic-grey;
   height: 506px;
+  margin: 0 auto;
 
   @media (min-width: $desktop-width) {
     height: 534px;
   }
 }
 
+.price__table {
+  padding-top: 100px;
+  margin: 0 auto;
+}
+
+.price__table-row {
+  height: 59px;
+  background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    height: 45px;
+  }
+}
+
+.price__table-column:first-child {
+  text-align: left;
+}
+
 .price__table-row-head {
   background-color: $basic-blue;
   color: $basic-white;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    height: 75px;
+  }
 }
 
 .price__table-column-head {
@@ -27,4 +50,15 @@
   font-size: 14px;
   font-weight: 400;
   color: $basic-blue;
+  width: 153px;
+  text-align: center;
+}
+
+.price__toggles {
+  text-align: center;
+}
+
+.column-cost {
+  font-size: 18px;
+  font-weight: 300;
 }

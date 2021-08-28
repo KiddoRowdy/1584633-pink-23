@@ -16,18 +16,59 @@
 .reviews__text {
   font-size: 14px;
   font-weight: 400;
-  color: $basic-blue;
+  color: $special-blue;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 688px;
+  }
 }
 
 .reviews {
   order: 4;
   height: 364px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     height: 405px;
   }
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__profession {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-size: 14px;
+    color: $special-blue;
+  }
+}
+
+.reviews__toggles {
+  margin: 0;
+}
+
+.reviews__quotes {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 72px auto;
+  }
+}
+
+.reviews__wrapper {
+  margin: 0 auto;
 }

@@ -3,10 +3,23 @@
   line-height: 29px;
   font-weight: 300;
   color: $basic-blue;
+  margin: 50px 49px 45px 49px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    margin: 74px 369px 61px 369px;
+  }
 }
 
 .page-footer {
   height: 898px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     .page-footer__contacts {
@@ -27,6 +40,40 @@
   @media (min-width: $tablet-width) {
     height: 127px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
   }
+}
+
+.page-footer__logo {
+  padding-top: 36px;
+}
+
+.page-footer__copyright {
+  padding-top: 44px;
+}
+
+.page-footer__wrapper {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.page-footer__social {
+  margin: 41px 0 41px 0;
+}
+
+.social__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social__item {
+  border: 3px solid $special-blue-border;
+  border-radius: 50px;
+  width: 48px;
+  height: 48px;
 }

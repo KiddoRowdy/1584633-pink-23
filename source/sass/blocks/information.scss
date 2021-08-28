@@ -3,6 +3,20 @@
   line-height: 29px;
   font-weight: 300;
   color: $basic-blue;
+  margin: 0 auto 50px;
+  width: 280px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 55px;
+    width: 588px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .information {
@@ -15,11 +29,20 @@
 
   @media (min-width: $desktop-width) {
     height: 933px;
+    margin-bottom: 90px;
   }
 
   .information__img {
     @media (min-width: $desktop-width) {
       display: none;
     }
+  }
+}
+
+.information__img {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    height: 547px;
   }
 }
