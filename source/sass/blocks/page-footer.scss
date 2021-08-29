@@ -25,13 +25,7 @@
     .page-footer__contacts {
       display: flex;
       flex-wrap: wrap;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    .page-footer__contacts {
-      display: flex;
-      flex-wrap: wrap;
+      justify-content: space-around;
     }
   }
 }
@@ -58,7 +52,8 @@
 }
 
 .page-footer__social {
-  margin: 41px 0 41px 0;
+  margin: 41px auto;
+  width: 195px;
 }
 
 .social__list {
@@ -72,8 +67,23 @@
 }
 
 .social__item {
+  position: relative;
+}
+
+.social__link::after {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: -20px;
   border: 3px solid $special-blue-border;
   border-radius: 50px;
-  width: 48px;
-  height: 48px;
+  width: 54px;
+  height: 54px;
+  display: inline-block;
+}
+
+.social__link svg {
+  width: 20px;
+  height: 20px;
+  fill: $basic-pink;
 }
