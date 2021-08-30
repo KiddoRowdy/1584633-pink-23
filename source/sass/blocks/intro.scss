@@ -5,18 +5,18 @@
   background-image: url("../../img/mobile/back-mobile.jpg");
   background-position: 50% -70px;
   background-color: $basic-blue;
-  height: 733px;
   margin-bottom: 46px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/tablet/back-tablet.jpg");
     background-position: 50% -105px;
+    padding: 74px 0 37px 0;
   }
 
   @media (min-width: $desktop-width) {
-    height: 853px;
     background-image: url("../../img/desktop/back-desktop.jpg");
+    padding: 74px 0 80px 0;
   }
 }
 
@@ -31,21 +31,26 @@
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 48px;
-    margin: 100px 0 0 20px;
+    margin: 20px 0 100px 43px;
+    width: 245px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
-    margin: 0;
+    margin: 40px 0 100px 130px;
   }
 }
 
 .intro-download {
-  margin-top: 360px;
+  margin: 360px 0 40px 0;
 
   @media (min-width: $tablet-width) {
-    margin: 100px 0 0 20px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 53px 0 0 95px;
   }
 }
 
@@ -64,6 +69,14 @@
     width: 660px;
     height: 545px;
     background-image: url("../../img/tablet/phone-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 103px;
+    right: 1px;
+    width: 1050px;
+    height: 645px;
+    background-image: url("../../img/desktop/phone-desktop.png");
   }
 }
 
