@@ -22,6 +22,7 @@
 .information {
   order: 2;
   height: 828px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     height: 725px;
@@ -44,5 +45,6 @@
 
   @media (min-width: $tablet-width) {
     height: 547px;
+    z-index: 1;
   }
 }

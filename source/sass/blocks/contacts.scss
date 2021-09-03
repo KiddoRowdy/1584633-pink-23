@@ -2,6 +2,7 @@
   font-size: 18px;
   line-height: 25px;
   color: $basic-blue;
+  margin-bottom: 10px;
 }
 
 .contacts-text {
@@ -9,9 +10,30 @@
   font-weight: 300;
   line-height: 32px;
   color: $basic-pink;
+  width: 241px;
 }
 
 .contacts-text a {
   color: $basic-pink;
   text-decoration: none;
+}
+
+.contacts-text-phone {
+  order: 1;
+}
+
+.contacts-text-email {
+  order: 2;
+
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+}
+
+.contacts-text-adress {
+  order: 3;
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
 }

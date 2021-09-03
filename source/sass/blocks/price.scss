@@ -3,9 +3,32 @@
   background-color: $basic-grey;
   height: 506px;
   margin: 0 auto;
+  position: relative;
 
   @media (min-width: $desktop-width) {
     height: 534px;
+  }
+}
+
+.price::before {
+  content: "";
+  position: absolute;
+  background-color: $basic-white;
+  top: -17px;
+  left: -7px;
+  height: 50px;
+  width: 110%;
+  transform: rotate(-6deg);
+
+  @media (min-width: $tablet-width) {
+    top: -38px;
+    height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -66px;
+    height: 97px;
+    transform: rotate(-3deg);
   }
 }
 

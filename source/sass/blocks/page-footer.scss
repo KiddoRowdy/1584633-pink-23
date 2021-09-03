@@ -52,8 +52,16 @@
 }
 
 .page-footer__social {
-  margin: 41px auto;
+  margin: 41px 0 0 25px;
   width: 195px;
+
+  @media (min-width: $tablet-width) {
+    margin: 41px 14px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 41px 14px 0 0;
+  }
 }
 
 .social__list {
