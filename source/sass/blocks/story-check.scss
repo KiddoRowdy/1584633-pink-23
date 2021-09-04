@@ -1,12 +1,15 @@
 .story-check {
   order: 4;
   background-color: $basic-grey;
-  height: 604px;
 
   @media (min-width: $tablet-width) {
     order: 6;
     background-color: $basic-white;
   }
+}
+
+.story-check__form {
+  padding: 42px 41px 0 22px;
 }
 
 .story-check__fieldset {
@@ -25,17 +28,25 @@
   line-height: 18px;
   color: $basic-pink;
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 44px;
 }
 
 .story-check__list {
   font-size: 18px;
   font-weight: 400;
-  color: $basic-blue;
+  color: $special-blue;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+.story-check__item {
+  margin-bottom: 44px;
 }
 
 .story-check__item::marker {

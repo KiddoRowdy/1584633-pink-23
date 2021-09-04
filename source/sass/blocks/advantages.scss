@@ -1,4 +1,4 @@
-.advantages {
+.advantages-wrapper {
   background-color: $basic-grey;
   text-align: center;
 
@@ -47,17 +47,15 @@
 
 .advantages__list {
   margin: 0;
-  padding: 130px 30px 48px 30px;
+  padding: 0;
   text-align: center;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 103px 20px 0 42px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 71px 20px 33px 42px;
     text-align: left;
   }
 }

@@ -1,10 +1,15 @@
 .application {
   order: 5;
-  height: 287px;
+}
+
+.application__form {
+  margin: 42px 20px 22px 20px;
 }
 
 .application__fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     border: 2px solid $special-grey-border;
@@ -21,6 +26,7 @@
   font-weight: 400;
   color: $basic-pink;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .application__legend {
@@ -33,4 +39,14 @@
     color: $basic-pink;
     text-transform: uppercase;
   }
+}
+
+.application__field-input {
+  width: 276px;
+  height: 59px;
+  margin: 15px 0 29px 0;
+}
+
+.application__field-label {
+  margin: 0 0 0 23px;
 }

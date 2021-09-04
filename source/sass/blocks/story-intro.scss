@@ -5,9 +5,25 @@
 .story-intro__text {
   font-size: 14px;
   font-weight: 400;
-  color: $basic-blue;
+  color: $special-blue;
+  text-align: center;
+  margin: 0 20px 0 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
   }
+}
+
+.story-form {
+  margin: 0 20px 0 20px;
+}
+
+.story-form__input {
+  width: 276px;
+  height: 59px;
+  margin-top: 15px;
+}
+
+.story-form__label {
+  margin: 0 0 0 23px;
 }
