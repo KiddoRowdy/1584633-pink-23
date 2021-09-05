@@ -36,13 +36,16 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    height: 429px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 429px;
     background-color: $special-grey-border;
+    margin-top: 41px;
   }
+}
+
+.scince-info__wrapper {
+  display: flex;
 }
 
 .science-info svg {

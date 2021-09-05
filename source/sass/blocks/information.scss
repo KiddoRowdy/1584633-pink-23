@@ -16,6 +16,7 @@
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
+    margin: 0 auto 100px;
   }
 }
 
@@ -30,7 +31,6 @@
 
   @media (min-width: $desktop-width) {
     height: 933px;
-    margin-bottom: 90px;
   }
 
   .information__img {

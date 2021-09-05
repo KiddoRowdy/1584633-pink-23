@@ -4,6 +4,7 @@
   line-height: 24px;
   margin: 0;
   text-align: center;
+  margin-bottom: 37px;
 }
 
 .modal__text {
@@ -13,6 +14,7 @@
   color: $basic-blue;
   margin: 0;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .modal__button {
@@ -22,14 +24,15 @@
   color: $basic-white;
   background-color: $basic-green;
   border: none;
-  margin: 0 auto;
+  width: 276px;
+  height: 59px;
+  margin-left: 20px;
 }
 
 .modal {
   order: 8;
   box-shadow: 0 7px 15px $special-modal-shadow;
   border-radius: 1px;
-  width: 100%;
   padding: 44px 22px 52px 22px;
 
   @media (min-width: $tablet-width) {
@@ -51,9 +54,7 @@
 }
 
 .modal-success-show {
-  height: 380px;
 
   @media (min-width: $tablet-width) {
-    height: 432px;
   }
 }

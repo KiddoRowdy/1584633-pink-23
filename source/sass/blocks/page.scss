@@ -11,14 +11,20 @@
 }
 
 .page__leveler {
-  margin: auto;
-  width: 320px;
+  margin: 0 auto;
+  width: 280px;
 
-  @media (min-width: $tablet-width) {
-    width: 660px;
+  @media (min-width: 660px) {
+    width: 620px;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 1200px;
+  @media (min-width: 980px) {
+    width: 940px;
   }
+}
+
+.page__body {
+  min-height: 100%;
+  display: grid;
+  margin: 0;
 }

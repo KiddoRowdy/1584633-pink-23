@@ -2,6 +2,7 @@
   position: relative;
   min-height: 69px;
   background-color: $basic-black;
+  margin: 0;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -39,8 +40,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    width: 900px;
-    margin-left: 300px;
+    margin-left: 150px;
   }
 }
 
