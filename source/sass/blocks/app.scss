@@ -8,7 +8,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 563px;
     width: 431px;
   }
 }
@@ -30,7 +29,7 @@
   color: $basic-pink;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 0 40px 20px;
+  margin: 0 0 40px 0;
 }
 
 .app__item {
@@ -47,8 +46,4 @@
 .app__list {
   padding: 0;
   margin: 0;
-}
-
-.app__form {
-  padding: 42px 71px 4px 22px;
 }

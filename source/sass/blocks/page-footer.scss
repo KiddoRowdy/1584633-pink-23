@@ -3,7 +3,7 @@
   line-height: 29px;
   font-weight: 300;
   color: $basic-blue;
-  margin: 50px 0 45px 30px;
+  margin: 50px 0 45px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
@@ -47,7 +47,7 @@
 }
 
 .page-footer__wrapper {
-  padding-left: 40px;
+  padding-left: 16px;
 }
 
 .page-footer__social {

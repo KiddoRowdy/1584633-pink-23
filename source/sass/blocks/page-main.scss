@@ -1,3 +1,16 @@
-.page-main {
-  display: grid;
+.page-main__form {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+  }
 }
+
+/*
+.page-main__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+*/

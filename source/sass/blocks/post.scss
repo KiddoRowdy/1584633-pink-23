@@ -8,6 +8,7 @@
   @media (min-width: $tablet-width) {
     height: 511px;
     flex-wrap: wrap;
+    padding: 57px 0 54px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,23 +17,44 @@
   }
 }
 
+.post__img {
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    margin: 0 0 54px 20px;
+  }
+}
+
+.post__buttons {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 340px;
+  }
+}
+
 .post__button {
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
-  border-radius: 30px;
+  border-radius: 34px;
+  margin-bottom: 12px;
 }
 
 .post__button__button-send {
   color: $basic-pink;
   border: 3px solid $basic-pink;
+  padding: 21px 93px;
 }
 
 .post__button__button-cancel {
   color: $basic-blue;
   border: 3px solid $basic-blue;
+  padding: 21px 106px;
 }
 
-.post__img {
-  margin: 57px 48px 54px 20px;
+.post__tools {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 27px 45px;
+  width: 275px;
 }

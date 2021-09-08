@@ -1,8 +1,6 @@
 .page-header {
   text-transform: uppercase;
   background-color: $basic-black;
-  display: flex;
-  justify-content: space-between;
 
   @media (min-width: $desktop-width) {
     padding-bottom: 55px;
