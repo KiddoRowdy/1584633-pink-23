@@ -65,6 +65,10 @@
   line-height: 24px;
   color: $special-blue;
   margin: 0 0 23px 0;
+
+  @media (min-width: $tablet-width) {
+    height: 35px;
+  }
 }
 
 .photo__intro {
@@ -95,7 +99,25 @@
   line-height: 24px;
   color: $basic-pink;
   text-transform: uppercase;
-  margin: 0%;
+  margin: 0 0 0 45px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.photo__likes::before {
+  content: "";
+  position: absolute;
+  bottom: 24px;
+  left: 23px;
+  width: 13px;
+  height: 12px;
+  background-image: url("../../img/icons/heart.svg");
+
+  @media (min-width: $tablet-width) {
+    left: 257px;
+  }
 }
 
 .photo__headline {
@@ -155,8 +177,5 @@
 .photo__item {
   background-color: $basic-grey;
   padding: 10px 10px 17px 17px;
-
-  @media (min-width: $tablet-width) {
-    height: 155px;
-  }
+  position: relative;
 }

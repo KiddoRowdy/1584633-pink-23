@@ -43,18 +43,53 @@
 .post__button__button-send {
   color: $basic-pink;
   border: 3px solid $basic-pink;
-  padding: 21px 93px;
+  padding: 17px 91px;
 }
 
 .post__button__button-cancel {
   color: $basic-blue;
   border: 3px solid $basic-blue;
-  padding: 21px 106px;
+  padding: 17px 104px;
 }
 
 .post__tools {
   list-style: none;
   padding: 0;
-  margin: 0 0 27px 45px;
   width: 275px;
+  position: relative;
+}
+
+.post__contrast {
+  margin-bottom: 50px;
+}
+
+.post__crop::before {
+  content: "";
+  position: absolute;
+  bottom: 13px;
+  left: 41px;
+  width: 44px;
+  height: 44px;
+  background-image: url("../../img/icons/crop.svg");
+}
+
+.post__fill::before {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: 119px;
+  width: 44px;
+  height: 44px;
+  background-image: url("../../img/icons/fill.svg");
+}
+
+.post__contrast::before {
+  content: "";
+  position: absolute;
+  bottom: 19px;
+  right: 39px;
+  width: 32px;
+  height: 32px;
+  background-image: url("../../img/icons/contrast.svg");
+  background-repeat: no-repeat;
 }

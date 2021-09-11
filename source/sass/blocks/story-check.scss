@@ -43,6 +43,10 @@
   margin: 0;
   padding: 0;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 50px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
@@ -50,7 +54,8 @@
 }
 
 .story-check__item {
-  margin: 0 44px 0 0;
+  position: relative;
+  margin: 0 0 47px 45px;
 
   @media (min-width: $tablet-width) {
     margin: 0 44px 47px 60px;
@@ -59,4 +64,25 @@
 
 .story-check__item::marker {
   font-size: 0;
+}
+
+.check__item-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -55px;
+  top: -5px;
+  width: 37px;
+  height: 37px;
+  border: 2px solid $basic-grey;
+  background-color: $basic-white;
+}
+
+.check__item-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -44px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../../img/icons/tick-checkbox.svg");
 }

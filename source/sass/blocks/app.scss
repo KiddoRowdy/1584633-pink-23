@@ -36,7 +36,8 @@
   font-size: 18px;
   font-weight: 400;
   color: $special-blue;
-  margin-bottom: 38px;
+  margin: 0 0 38px 75px;
+  position: relative;
 }
 
 .app__item::marker {
@@ -46,4 +47,28 @@
 .app__list {
   padding: 0;
   margin: 0;
+  position: relative;
+}
+
+.app__item-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -55px;
+  top: -5px;
+  width: 37px;
+  height: 37px;
+  border: 2px solid $basic-grey;
+  border-radius: 50%;
+  background-color: $basic-white;
+}
+
+.app__item-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -42px;
+  width: 15px;
+  height: 15px;
+  background-color: $basic-pink;
+  border-radius: 50%;
 }

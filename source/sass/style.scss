@@ -1,11 +1,12 @@
 // Начните писать стили здесь
 
-@import "global/variables.scss";
 @import "global/fonts.scss";
+@import "global/variables.scss";
 
 /*Blocks*/
 
 @import "blocks/page.scss";
+@import "blocks/logo.scss";
 @import "blocks/advantages.scss";
 @import "blocks/app.scss";
 @import "blocks/comments.scss";

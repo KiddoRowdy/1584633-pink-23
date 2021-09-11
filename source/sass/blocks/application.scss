@@ -31,6 +31,7 @@
   color: $basic-pink;
   text-transform: uppercase;
   margin: 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -67,6 +68,18 @@
   }
 }
 
+.application__field-number::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/icons/phone.svg");
+  background-repeat: no-repeat;
+  background-color: $basic-grey;
+  width: 20px;
+  height: 19px;
+  top: -29px;
+  left: 16px;
+}
+
 .application__field-label {
   margin: 0 0 0 23px;
 
@@ -74,4 +87,16 @@
     order: 2;
     margin: 0 0 0 81px;
   }
+}
+
+.application__field-mail::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/icons/mail.svg");
+  background-repeat: no-repeat;
+  background-color: $basic-grey;
+  width: 20px;
+  height: 19px;
+  top: -29px;
+  left: 16px;
 }

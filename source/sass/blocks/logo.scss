@@ -1,0 +1,21 @@
+.logo {
+  display: block;
+}
+
+.logo__wrapper {
+  &--desktop {
+    @media (max-width: 979px) {
+      display: none;
+    }
+  }
+  &--tablet {
+    @media (max-width: 979px) and (min-width: 659px) {
+      display: block;
+    }
+  }
+  &--mobile {
+    @media (max-width: 659px) {
+      display: block;
+    }
+  }
+}

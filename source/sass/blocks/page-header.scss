@@ -23,16 +23,20 @@
   }
 }
 
-.page-header__logo {
-  height: 23px;
-  text-align: left;
-  cursor: pointer;
+.page-header__logo-link {
+  display: block;
+  // text-align: left;
 
-  &:hover .page-header__logo-icon {
-    fill: $basic-pink;
+  @media (min-width: 660px) {
+    width: 145px;
+    height: 40px;
   }
 
-  &:active .page-header__logo-icon {
+  &:hover {
+    --fill: #d22856;
+  }
+
+  &:active {
     opacity: 0.3;
   }
 }
