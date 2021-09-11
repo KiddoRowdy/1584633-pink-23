@@ -7,21 +7,32 @@
   }
 }
 
-.page-header__logo {
-  height: 23px;
-  text-align: left;
-}
-
-.page-header__logo img {
+.page-header__logo-icon {
   width: 74px;
   height: 23px;
-  padding: 22px 0 21px 20px;
+  margin: 22px 0 0 0;
 
   @media (min-width: $tablet-width) {
     padding: 27px 0 43px 20px;
+    width: 145px;
+    height: 40px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 44px 0 43px 0;
+  }
+}
+
+.page-header__logo {
+  height: 23px;
+  text-align: left;
+  cursor: pointer;
+
+  &:hover .page-header__logo-icon {
+    fill: $basic-pink;
+  }
+
+  &:active .page-header__logo-icon {
+    opacity: 0.3;
   }
 }

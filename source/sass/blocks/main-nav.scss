@@ -15,6 +15,42 @@
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
+
+  &:hover {
+    color: $basic-pink;
+  }
+
+  &:active {
+    color: $basic-pink;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      color: $basic-pink;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.main-nav__item--active {
+  position: relative;
+}
+
+.main-nav__item--active::after {
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 34px;
+    left: 0;
+    height: 2px;
+    background: $basic-white;
+  }
 }
 
 .main-nav__item::marker {
