@@ -25,6 +25,16 @@
   }
 }
 
+.story-form__input-name {
+  @media (min-width: $tablet-width) {
+    margin-left: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 58px;
+  }
+}
+
 .story-form__label {
   margin: 0 0 0 0;
 }

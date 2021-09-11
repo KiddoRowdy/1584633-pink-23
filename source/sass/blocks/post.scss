@@ -93,3 +93,36 @@
   background-image: url("../../img/icons/contrast.svg");
   background-repeat: no-repeat;
 }
+
+.post__slider {
+  margin-bottom: 34px;
+}
+
+.bar {
+  background-color: $special-blue;
+  height: 2px;
+  width: 240px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.toggle {
+  position: absolute;
+  bottom: -7px;
+  right: 31px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid $basic-pink;
+  background-color: $basic-white;
+  border-radius: 50%;
+}
+
+.tools__bar {
+  @media (min-width: $tablet-width) {
+    background-color: $special-blue;
+    height: 2px;
+    width: 240px;
+    margin-left: 20px;
+    position: relative;
+  }
+}

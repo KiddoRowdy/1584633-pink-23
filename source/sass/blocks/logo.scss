@@ -19,3 +19,11 @@
     }
   }
 }
+
+.logo__image {
+  margin: 22px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 27px 0 0 0;
+  }
+}

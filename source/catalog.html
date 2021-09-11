@@ -11,37 +11,51 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page__leveler">
-    <nav class="main-nav main-nav--closed main-nav--nojs page__leveler">
-      <a class="page-header__logo">
-        <img src="img/icons/logo-mobile@1x.svg" width="75" height="24" alt="Логотип">
-      </a>
-      <button class="main-nav__toggle" type="button"><span class="page__hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list page__leveler">
-          <li class="main-nav__item main-nav__item--active">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">
-              Конкурс
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="blank.html">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs page__leveler">
+        <a href="#" class="page-header__logo-link">
+          <div class="logo__wrapper logo__wrapper--desktop">
+            <svg class="logo__image" width="145" height="40">
+              <use href="./img/logo.svg#light-desktop"/>
+            </svg>
+          </div>
+          <div class="logo__wrapper logo__wrapper--tablet" hidden>
+            <svg class="logo__image" width="145" height="40">
+              <use href="./img/logo.svg#light-tablet"/>
+            </svg>
+          </div>
+          <div class="logo__wrapper logo__wrapper--mobile" hidden>
+            <svg class="logo__image" width="74" height="23">
+              <use href="./img/logo.svg#light-mobile"/>
+            </svg>
+          </div>
+        </a>
+        <button class="main-nav__toggle" type="button"><span class="page__hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list page__leveler">
+            <li class="main-nav__item main-nav__item--active">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="blank.html">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
@@ -68,11 +82,10 @@
       <div class="photo__block photo__block-panorama page__leveler">
         <div class="photo__item photo__item-panorama">
           <h3 class="photo__headline">
-            <a class="photo__link" href="#">Анна<span class="photo-time">(5 минут назад)</span></a>
+            <a class="photo__link" href="#">Анна<span class="photo-time">(5 минут назад)</span><span class="photo__likes photo__likes-panorama">Нравится: 215</span></a>
           </h3>
-          <p class="photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
+          <p class="photo__text photo__text-panorama">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
             перископе, задавайте свои вопросы!</p>
-          <p class="photo__likes">Нравится: 215</p>
         </div>
       </div>
     </section>
@@ -175,12 +188,23 @@
           <img class="post__img" src="img/post-winter-mobile@1x.jpg" srcset="img/post-winter-mobile@2x.jpg 2x" alt="winter" width="280" height="374">
         </picture>
         <ul class="post__tools">
-          <li class="post__crop"></li>
-          <li class="post__fill"></li>
-          <li class="post__contrast"></li>
+          <li class="post__crop">
+          </li>
+          <li class="post__fill">
+            <div class=tools__bar>
+              <div class="toggle__fill"></div>
+            </div>
+          </li>
+          <li class="post__contrast">
+            <div class="tools__bar">
+              <div class="toggle__contrast"></div>
+            </div>
+          </li>
         </ul>
         <div class="post__slider">
-          <input type="range" name="range" id="range" min="0" max="100">
+          <div class="bar">
+            <div class="toggle"></div>
+          </div>
         </div>
         <div class="post__buttons">
           <button class="post__button post__button__button-send">Запостить</button>
@@ -207,8 +231,17 @@
       </div>
       <div class="map"></div>
       <div class="page-footer__bottom">
-        <a class="page-footer__logo">
-          <img class="footer__logo-icon" src="img/logo.svg#logofooter" width="145" height="40" alt="Pink-Взгляните на жизнь иначе">
+        <a class="page-footer__logo-link logo">
+          <div class="logo__wrapper logo__wrapper--desktop">
+            <svg class="logo__image-footer" width="145" height="40">
+              <use href="./img/logo.svg#desktop" />
+            </svg>
+          </div>
+          <div class="logo__wrapper logo__wrapper--tablet logo__wrapper--mobile" hidden>
+            <svg class="logo__image-footer width="145" height="40">
+              <use href="./img/logo.svg#tablet" />
+            </svg>
+          </div>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">

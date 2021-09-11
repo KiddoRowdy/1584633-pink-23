@@ -11,37 +11,51 @@
 <body class="page__body">
   <header class="page-header">
     <div class="page__leveler">
-    <nav class="main-nav main-nav--closed main-nav--nojs page__leveler">
-      <a class="page-header__logo">
-        <img src="img/icons/logo-mobile@1x.svg" width="75" height="24" alt="Логотип">
-      </a>
-      <button class="main-nav__toggle" type="button"><span class="page__hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list page__leveler">
-          <li class="main-nav__item main-nav__item--active">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">
-              Фотографии
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">
-              Конкурс
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="blank.html">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+      <nav class="main-nav main-nav--closed main-nav--nojs page__leveler">
+        <a href="#" class="page-header__logo-link">
+          <div class="logo__wrapper logo__wrapper--desktop">
+            <svg class="logo__image" width="145" height="40">
+              <use href="./img/logo.svg#light-desktop"/>
+            </svg>
+          </div>
+          <div class="logo__wrapper logo__wrapper--tablet" hidden>
+            <svg class="logo__image" width="145" height="40">
+              <use href="./img/logo.svg#light-tablet"/>
+            </svg>
+          </div>
+          <div class="logo__wrapper logo__wrapper--mobile" hidden>
+            <svg class="logo__image" width="74" height="23">
+              <use href="./img/logo.svg#light-mobile"/>
+            </svg>
+          </div>
+        </a>
+        <button class="main-nav__toggle" type="button"><span class="page__hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list page__leveler">
+            <li class="main-nav__item main-nav__item--active">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="blank.html">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main page-main__form">
@@ -66,7 +80,7 @@
           </p>
           <p class="story-form__field">
             <label class="story-form__label" for="form__field-name">Имя:</label>
-            <input class="story-form__input"  id="form__field-name" type="text" placeholder="Введите ваше имя*" aria-label="Введите ваше имя">
+            <input class="story-form__input story-form__input-name"  id="form__field-name" type="text" placeholder="Введите ваше имя*" aria-label="Введите ваше имя">
           </p>
           <p class="story-form__field">
             <label class="story-form__label"  for="form__field-patronymic">Отчетсво:</label>
@@ -198,8 +212,17 @@
       </div>
       <div class="map"></div>
       <div class="page-footer__bottom">
-        <a class="page-footer__logo">
-          <img class="footer__logo-icon" src="img/logo.svg#logofooter" width="145" height="40" alt="Pink-Взгляните на жизнь иначе">
+        <a class="page-footer__logo-link logo">
+          <div class="logo__wrapper logo__wrapper--desktop">
+            <svg class="logo__image-footer" width="145" height="40">
+              <use href="./img/logo.svg#desktop" />
+            </svg>
+          </div>
+          <div class="logo__wrapper logo__wrapper--tablet logo__wrapper--mobile" hidden>
+            <svg class="logo__image-footer" width="145" height="40">
+              <use href="./img/logo.svg#tablet" />
+            </svg>
+          </div>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">

@@ -49,9 +49,12 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    height: 160px;
   }
 }
+
 
 .story-check__item {
   position: relative;

@@ -41,7 +41,6 @@
 }
 
 .main-nav__item--active::after {
-
   @media (min-width: $desktop-width) {
     content: "";
     position: absolute;
@@ -70,13 +69,17 @@
 }
 
 .main-nav__wrapper {
-  background-color: $basic-black;
   position: absolute;
   z-index: 1;
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 29px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    margin-left: 137px;
+    margin: 0 0 0 137px;
   }
 }
 
