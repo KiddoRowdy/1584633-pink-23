@@ -28,6 +28,16 @@
 
 .photo__text-panorama {
   margin: 0 0 23px 0;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.photo__headline-panorama {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .photo__link {
@@ -107,10 +117,8 @@
 }
 
 .photo__likes-panorama {
-  margin-left: 293px;
-
-  @media (min-width: $desktop-width) {
-    margin-left: 615px;
+  @media (min-width: $tablet-width) {
+    order: 2;
   }
 }
 
@@ -152,6 +160,8 @@
 
 .photo__item-panorama {
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .photo__img-panorama {

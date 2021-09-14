@@ -28,7 +28,7 @@
 }
 
 .price__table {
-  padding-top: 100px;
+  padding: 100px 0 45px 0;
   margin: 0 auto;
 }
 
@@ -47,48 +47,106 @@
 }
 
 .price__table-row-head {
-  background-color: $basic-blue;
-  color: $basic-white;
-  text-transform: uppercase;
-
   @media (min-width: $tablet-width) {
     height: 75px;
   }
 }
 
 .price__table-column-head {
-  font-size: 16px;
-}
-
-.prcie__table-cost {
   font-size: 18px;
   font-weight: 300;
+  background-color: $special-blue;
+  color: $basic-white;
 }
 
 .price__table-column {
   font-size: 14px;
   font-weight: 400;
-  color: $basic-blue;
+  color: $special-blue;
   width: 153px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 15px 5px 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 5px 22px 5px 22px;
+  }
 }
 
 .price__toggles {
   text-align: center;
+  margin: 0;
+  padding: 0 0 45px 0;
 }
 
-.column-cost {
-  font-size: 18px;
-  font-weight: 300;
+.slider__toggle {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-.price__table-column-tick::after {
+.slider__toggle::after {
   content: "";
-  position: absolute;
+  display: inline-block;
+  background-image: url("../../img/icons/toggle.svg");
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 6px;
+  top: 21px;
+  right: 16px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.slider__toggle--current::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../../img/icons/toggle-current.svg");
+  background-repeat: no-repeat;
+  width: 6px;
+  height: 6px;
+  top: 21px;
+  right: 16px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.price__table-column-yes::after {
+  content: "";
+  display: inline-block;
   background-image: url("../../img/icons/tick.svg");
   background-repeat: no-repeat;
   width: 31px;
   height: 21px;
   top: 21px;
   right: 16px;
+  text-align: center;
+}
+
+.price__table-column-no::after {
+  content: "";
+  display: inline-block;
+  background-image: url("../../img/icons/cross.svg");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
+  top: 21px;
+  right: 16px;
+  text-align: center;
+}
+
+.column-name {
+  display: block;
+  background-color: $special-blue;
+  color: $basic-white;
+  text-transform: uppercase;
+  font-weight: 700;
 }

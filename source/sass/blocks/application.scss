@@ -69,15 +69,23 @@
 }
 
 .application__field-number::before {
-  content: "";
-  position: absolute;
-  background-image: url("../../img/icons/phone.svg");
-  background-repeat: no-repeat;
-  background-color: $basic-grey;
-  width: 20px;
-  height: 19px;
-  top: -29px;
-  left: 16px;
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/icons/phone.svg");
+    background-repeat: no-repeat;
+    background-color: $basic-grey;
+    background-position: 50%;
+    width: 59px;
+    height: 61px;
+    top: 18px;
+    right: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 18px;
+    right: 43px;
+  }
 }
 
 .application__field-label {
@@ -90,13 +98,21 @@
 }
 
 .application__field-mail::after {
-  content: "";
-  position: absolute;
-  background-image: url("../../img/icons/mail.svg");
-  background-repeat: no-repeat;
-  background-color: $basic-grey;
-  width: 20px;
-  height: 19px;
-  top: -29px;
-  left: 16px;
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/icons/mail.svg");
+    background-repeat: no-repeat;
+    background-color: $basic-grey;
+    background-position: 50%;
+    width: 59px;
+    height: 61px;
+    top: 18px;
+    right: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 18px;
+    right: 19px;
+  }
 }

@@ -17,6 +17,7 @@
   font-size: 14px;
   font-weight: 400;
   color: $special-blue;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -24,6 +25,19 @@
 
   @media (min-width: $desktop-width) {
     width: 688px;
+  }
+}
+
+.reviews__text::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/icons/quotes.svg");
+    background-repeat: no-repeat;
+    width: 79px;
+    height: 63px;
+    bottom: 155px;
+    right: 302px;
   }
 }
 
@@ -73,4 +87,41 @@
 
 .reviews__wrapper {
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin: 180px auto;
+  }
+}
+
+.reviews__button {
+  border: none;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.reviews__prev::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/icons/prev-arrow.svg");
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 41px;
+    top: -208px;
+    right: 413px;
+  }
+}
+
+.reviews__next::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/icons/next-arrow.svg");
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 41px;
+    top: -208px;
+    left: 413px;
+  }
 }

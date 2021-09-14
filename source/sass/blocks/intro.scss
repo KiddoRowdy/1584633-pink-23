@@ -46,7 +46,8 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/phone-mobile@1x.png"), url("../../img/back-mobile@2x.jpg");
-    background-size: 322px auto;
+    background-size: contain, cover;
+    background-position: center;
   }
 
   @media (min-width: $tablet-width) {
@@ -54,7 +55,6 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/phone-tablet@2x.png"), url("../../img/back-tablet@2x.jpg");
-      background-size: cover;
     }
   }
 
