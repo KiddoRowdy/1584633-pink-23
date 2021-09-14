@@ -17,9 +17,9 @@
   font-size: 12px;
   font-weight: 700;
   line-height: 24px;
-  color: $basic-white;
+  color: var(--basic-white);
   text-transform: uppercase;
-  background-color: $basic-pink;
+  background-color: var(--basic-pink);
 }
 
 .photo__block {
@@ -44,7 +44,7 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
-  color: $basic-blue;
+  color: var(--basic-blue);
   text-decoration: none;
 }
 
@@ -59,7 +59,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  color: $special-blue;
+  color: var(--special-blue);
   margin: 0 0 23px 0;
 
   @media (min-width: $tablet-width) {
@@ -69,7 +69,7 @@
 
 .photo__intro {
   font-size: 14px;
-  color: $special-blue;
+  color: var(--special-blue);
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -93,7 +93,7 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
-  color: $basic-pink;
+  color: var(--basic-pink);
   text-transform: uppercase;
   margin: 0 0 0 45px;
 
@@ -109,7 +109,8 @@
   left: 23px;
   width: 13px;
   height: 12px;
-  background-image: url("../../img/icons/heart.svg");
+  background-image: url("../../icons/sprite.svg#heart");
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     left: 257px;
@@ -191,7 +192,7 @@
 }
 
 .photo__item {
-  background-color: $basic-grey;
+  background-color: var(--basic-grey);
   padding: 10px 10px 17px 17px;
   position: relative;
 }

@@ -1,12 +1,12 @@
 .intro {
   order: 1;
-  color: $basic-white;
+  color: var(--basic-white);
   background-repeat: no-repeat;
   background-image: url("../../img/back-mobile@1x.jpg");
   background-position: 50% 106px, 50% -70px;
-  background-color: $basic-blue;
+  background-color: var(--basic-blue);
   margin-bottom: 46px;
-  position: relative;
+  box-shadow: 0 -400px 0 0 hsl(202, 45%, 13%);
 
   @media (min-width: $tablet-width) {
     background-image: url("../../img/back-tablet@1x.jpg");
@@ -32,7 +32,7 @@
   }
 }
 
-.intro-form {
+.intro--form {
   background-position: 50% -65px, 50% -105px;
 
   @media (min-width: $tablet-width) {
@@ -41,7 +41,8 @@
   }
 }
 
-.intro-index {
+.intro--index {
+  padding-top: 66px;
   background-image: url("../../img/phone-mobile@1x.png"), url("../../img/back-mobile@1x.jpg");
 
   @media (min-resolution: 2dppx) {
@@ -132,12 +133,12 @@
 }
 */
 .intro-link {
-  color: $basic-white;
+  color: var(--basic-white);
   text-decoration: none;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-  border: 3px solid $basic-white;
+  border: 3px solid var(--basic-white);
   border-radius: 41px;
   padding: 15px 36px 15px 35px;
   margin: 0 0 32px 0;
@@ -154,7 +155,7 @@
 .intro__item-apple::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/icons/apple.svg");
+  background-image: url("../../icons/sprite.svg#apple");
   background-repeat: no-repeat;
   width: 47px;
   height: 56px;
@@ -165,7 +166,7 @@
 .intro__item-android::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/icons/android.svg");
+  background-image: url("../../icons/sprite.svg#android");
   background-repeat: no-repeat;
   width: 43px;
   height: 47px;
@@ -176,7 +177,7 @@
 .intro__item-microsoft::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/icons/microsoft.svg");
+  background-image: url("../../icons/sprite.svg#microsoft");
   background-repeat: no-repeat;
   width: 44px;
   height: 41px;

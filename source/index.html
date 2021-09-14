@@ -4,64 +4,74 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="favicons/icon.svg" sizes="any" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png" sizes="180x180" type="image/png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
 
-  <header class="page-header">
-    <div class="page__leveler">
-      <nav class="main-nav main-nav--closed main-nav--nojs page__leveler">
-        <a href="#" class="page-header__logo-link">
-          <div class="logo__wrapper logo__wrapper--desktop">
-            <svg class="logo__image" width="145" height="40">
-              <use href="./img/logo.svg#light-desktop"/>
-            </svg>
-          </div>
-          <div class="logo__wrapper logo__wrapper--tablet" hidden>
-            <svg class="logo__image" width="145" height="40">
-              <use href="./img/logo.svg#light-tablet"/>
-            </svg>
-          </div>
-          <div class="logo__wrapper logo__wrapper--mobile" hidden>
-            <svg class="logo__image" width="74" height="23">
-              <use href="./img/logo.svg#light-mobile"/>
-            </svg>
-          </div>
-        </a>
-        <button class="main-nav__toggle" type="button"><span class="page__hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list page__leveler">
-            <li class="main-nav__item main-nav__item--active">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="catalog.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="blank.html">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
+  <header class="page-header page__header">
+    <div class="page__leveler page-header__wrapper">
+      <a href="#" class="page-header__logo-link logo" aria-current="page">
+        <div class="logo__wrapper logo__wrapper--desktop">
+          <svg class="logo__image" width="145" height="40">
+            <use href="./img/logo.svg#light-desktop"/>
+          </svg>
         </div>
+        <div class="logo__wrapper logo__wrapper--tablet" hidden>
+          <svg class="logo__image" width="145" height="40">
+            <use href="./img/logo.svg#light-tablet"/>
+          </svg>
+        </div>
+        <div class="logo__wrapper logo__wrapper--mobile" hidden>
+          <svg class="logo__image" width="74" height="23">
+            <use href="./img/logo.svg#light-mobile"/>
+          </svg>
+        </div>
+      </a>
+      <nav class="main-nav main-nav--nojs page-header__nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="page__hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html" aria-current="page">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">
+              Фотографии
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">
+              Конкурс
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="blank.html">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+        <!-- <div class="main-nav__wrapper">
+        </div> -->
       </nav>
     </div>
   </header>
 
-  <main class="page-main">
+  <main class="page-main page__main">
     <h1 class="page__hidden">Pink-Взгляните на жизнь иначе!</h1>
-    <section class="intro intro-index">
+    <section class="intro intro--index">
       <div class="page__leveler">
         <h2 class="intro__header intro__header-index">Взгляните на жизнь иначе!</h2>
         <div class="intro-download">
@@ -79,7 +89,7 @@
     <section class="information">
       <h2 class="page__hidden">О нас</h2>
       <p class="information__slogan">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</p>
-      <div class="advantages">
+      <div class="advantages page__section page__section--askew-top">
         <div class="advantages-wrapper page__leveler">
           <h2 class="page__hidden">Наши преимущества</h2>
           <ul class="advantages__list">
@@ -154,7 +164,7 @@
       </div>
     </section>
 
-    <section class="price slider">
+    <section class="price slider page__section page__section--askew-top">
       <h2 class="page__hidden">Тарифы</h2>
       <div class="page__leveler">
         <table class="price__table">
@@ -192,7 +202,7 @@
     </section>
   </main>
 
-  <footer class="page-footer page__leveler">
+  <footer class="page-footer page__footer page__leveler">
     <p class="page-footer__text">Остались вопросы? Свяжитесь с нами!</p>
     <div class="page-footer__wrapper">
       <div class="page-footer__contacts">
@@ -244,7 +254,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

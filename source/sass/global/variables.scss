@@ -1,17 +1,28 @@
-$basic-blue: hsla(213, 26%, 15%, 1);
-$basic-grey: hsla(0, 0%, 95%, 1);
-$basic-pink: hsla(344, 68%, 49%, 1);
-$basic-black: hsla(0, 0%, 0%, 1);
-$basic-white: hsla(0, 0%, 100%, 1);
-$basic-green: hsla(151, 61%, 42%, 1);
-
-$special-blue: hsla(211, 27%, 21%, 1);
-$special-blue-border: hsla(211, 27%, 21%, 0.1);
-$special-grey-timer: hsla(0, 0%, 87%, 1);
-$special-grey-border: hsla(0, 0%, 95%, 1);
-$special-modal-shadow: rgba(0, 1, 1, 0.15);
-$special-black-border: hsla(0, 0%, 0%, 0.1);
 // Viewports
 
+$mobile-only: 659.5px;
 $tablet-width: 660px;
 $desktop-width: 980px;
+$not-desktop: 979.5px;
+
+:root {
+  --basic-blue: hsla(213, 26%, 15%, 1);
+  --basic-grey: hsla(0, 0%, 95%, 1);
+  --basic-pink: hsla(344, 68%, 49%, 1);
+  --basic-black: hsla(0, 0%, 0%, 1);
+  --basic-white: hsla(0, 0%, 100%, 1);
+  --basic-green: hsla(151, 61%, 42%, 1);
+  --transparent-black: hsla(0, 0%, 0%, 0.3);
+  --special-blue: hsla(211, 27%, 21%, 1);
+  --special-blue-pale: hsla(211, 15%, 33%, 1);
+  --special-blue-border: hsla(211, 27%, 21%, 0.1);
+  --special-grey-timer: hsla(0, 0%, 87%, 1);
+  --special-grey-border: hsla(0, 0%, 95%, 1);
+  --special-modal-shadow: rgba(0, 1, 1, 0.15);
+  --special-black-border: hsla(0, 0%, 0%, 0.1);
+  --header-min-height: 66px;
+
+  @media (min-width: $tablet-width) {
+    --header-min-height: 110px;
+  }
+}

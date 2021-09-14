@@ -1,30 +1,7 @@
 .price {
   order: 5;
-  background-color: $basic-grey;
+  background-color: var(--basic-grey);
   position: relative;
-}
-
-.price::before {
-  content: "";
-  position: absolute;
-  background-color: $basic-white;
-  top: -22px;
-  left: -7px;
-  height: 53px;
-  width: 110%;
-  transform: rotate(-4deg);
-
-  @media (min-width: $tablet-width) {
-    top: -60px;
-    height: 104px;
-    transform: rotate(-3deg);
-  }
-
-  @media (min-width: $desktop-width) {
-    top: -66px;
-    height: 97px;
-    transform: rotate(-3deg);
-  }
 }
 
 .price__table {
@@ -34,7 +11,7 @@
 
 .price__table-row {
   height: 59px;
-  background-color: $basic-white;
+  background-color: var(--basic-white);
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -55,14 +32,14 @@
 .price__table-column-head {
   font-size: 18px;
   font-weight: 300;
-  background-color: $special-blue;
-  color: $basic-white;
+  background-color: var(--special-blue);
+  color: var(--basic-white);
 }
 
 .price__table-column {
   font-size: 14px;
   font-weight: 400;
-  color: $special-blue;
+  color: var(--special-blue);
   width: 153px;
   text-align: center;
 
@@ -90,10 +67,10 @@
 .slider__toggle::after {
   content: "";
   display: inline-block;
-  background-image: url("../../img/icons/toggle.svg");
+  background-image: url("../../icons/sprite.svg#toggle");
   background-repeat: no-repeat;
-  width: 6px;
-  height: 6px;
+  width: 12px;
+  height: 12px;
   top: 21px;
   right: 16px;
   text-align: center;
@@ -106,10 +83,10 @@
 .slider__toggle--current::before {
   content: "";
   display: inline-block;
-  background-image: url("../../img/icons/toggle-current.svg");
+  background-image: url("../../icons/sprite.svg#toggle-current");
   background-repeat: no-repeat;
-  width: 6px;
-  height: 6px;
+  width: 12px;
+  height: 12px;
   top: 21px;
   right: 16px;
   text-align: center;
@@ -122,10 +99,11 @@
 .price__table-column-yes::after {
   content: "";
   display: inline-block;
-  background-image: url("../../img/icons/tick.svg");
+  background-image: url("../../icons/sprite.svg#tick");
   background-repeat: no-repeat;
+  background-size: 31px;
   width: 31px;
-  height: 21px;
+  height: 31px;
   top: 21px;
   right: 16px;
   text-align: center;
@@ -134,10 +112,11 @@
 .price__table-column-no::after {
   content: "";
   display: inline-block;
-  background-image: url("../../img/icons/cross.svg");
+  background-image: url("../../icons/sprite.svg#cross");
   background-repeat: no-repeat;
-  width: 27px;
-  height: 27px;
+  background-size: 27px;
+  width: 33px;
+  height: 33px;
   top: 21px;
   right: 16px;
   text-align: center;
@@ -145,8 +124,8 @@
 
 .column-name {
   display: block;
-  background-color: $special-blue;
-  color: $basic-white;
+  background-color: var(--special-blue);
+  color: var(--basic-white);
   text-transform: uppercase;
   font-weight: 700;
 }

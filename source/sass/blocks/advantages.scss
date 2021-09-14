@@ -1,5 +1,5 @@
 .advantages {
-  background-color: $basic-grey;
+  background-color: var(--basic-grey);
 }
 
 .advantages-wrapper {
@@ -17,29 +17,6 @@
       display: flex;
       flex-direction: row;
     }
-  }
-}
-
-.advantages::before {
-  content: "";
-  position: absolute;
-  background-color: $basic-white;
-  top: 138px;
-  left: -7px;
-  height: 50px;
-  width: 110%;
-  transform: rotate(-5deg);
-
-  @media (min-width: $tablet-width) {
-    top: 123px;
-    height: 70px;
-    transform: rotate(-4deg);
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 268px;
-    height: 134px;
-    transform: rotate(-3deg);
   }
 }
 
@@ -85,7 +62,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  color: $special-blue;
+  color: var(--special-blue);
   margin: 0 0 46px 0;
 
   @media (min-width: $desktop-width) {

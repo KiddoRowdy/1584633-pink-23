@@ -2,7 +2,7 @@
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
-  color: $basic-blue;
+  color: var(--basic-blue);
   margin: 50px 0 45px 0;
 
   @media (min-width: $tablet-width) {
@@ -18,7 +18,6 @@
 }
 
 .page-footer {
-  height: 898px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -96,56 +95,56 @@
   position: absolute;
   top: -16px;
   left: -20px;
-  border: 3px solid $special-blue-border;
+  border: 3px solid var(--special-blue-border);
   border-radius: 50px;
-  width: 54px;
-  height: 54px;
+  width: 48px;
+  height: 48px;
   display: inline-block;
 }
 
 .social__link svg {
   width: 20px;
   height: 20px;
-  fill: $basic-pink;
+  fill: var(--basic-pink);
 }
 
 .social__link--twitter::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/icons/twitter.svg");
+  background-image: url("../../icons/sprite.svg#twitter");
   background-repeat: no-repeat;
-  width: 43px;
-  height: 47px;
-  top: 5px;
-  right: -43px;
+  width: 18px;
+  height: 14px;
+  top: 4px;
+  right: -20px;
 }
 
 .social__link--facebook::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/icons/facebook.svg");
+  background-image: url("../../icons/sprite.svg#facebook");
   background-repeat: no-repeat;
-  width: 43px;
-  height: 47px;
+  width: 11px;
+  height: 26px;
   top: 3px;
-  right: -48px;
+  right: -12px;
 }
 
 .social__link--youtube::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/icons/youtube.svg");
+  background-image: url("../../icons/sprite.svg#youtube");
   background-repeat: no-repeat;
-  width: 43px;
-  height: 47px;
-  top: 6px;
-  right: -47px;
+  width: 15px;
+  height: 13px;
+  top: 5px;
+  right: -18px;
 }
 
 .copyright__link::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/icons/html-academy.svg");
+  background-image: url("../../icons/sprite.svg#html-academy");
   background-repeat: no-repeat;
   width: 27px;
   height: 34px;

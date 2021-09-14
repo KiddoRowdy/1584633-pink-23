@@ -1,31 +1,32 @@
 .logo {
-  display: block;
+  display: grid;
+  max-width: max-content;
 }
 
 .logo__wrapper {
+  height: 23px;
+
+  @media (min-width: $tablet-width) {
+    height: 56px;
+  }
+
   &--desktop {
-    @media (max-width: 979px) {
+    @media (max-width: $not-desktop) {
       display: none;
     }
   }
 
   &--tablet {
-    @media (max-width: 979px) and (min-width: 659px) {
-      display: block;
+    @media (max-width: $not-desktop) and (min-width: $tablet-width) {
+      display: grid;
+      place-items: left;
     }
   }
 
   &--mobile {
-    @media (max-width: 659px) {
-      display: block;
+    @media (max-width: $mobile-only) {
+      display: grid;
+      place-items: left;
     }
-  }
-}
-
-.logo__image {
-  margin: 22px 0 0 0;
-
-  @media (min-width: $tablet-width) {
-    margin: 27px 0 0 0;
   }
 }
