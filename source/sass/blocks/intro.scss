@@ -154,7 +154,7 @@
 .intro__item-apple::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/icons/apple.svg");
+  background-image: url("../../icons/sprite.svg#apple");
   background-repeat: no-repeat;
   width: 47px;
   height: 56px;
@@ -165,7 +165,7 @@
 .intro__item-android::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/icons/android.svg");
+  background-image: url("../../icons/sprite.svg#android");
   background-repeat: no-repeat;
   width: 43px;
   height: 47px;
@@ -176,7 +176,7 @@
 .intro__item-microsoft::after {
   content: "";
   position: absolute;
-  background-image: url("../../img/icons/microsoft.svg");
+  background-image: url("../../icons/sprite.svg#microsoft");
   background-repeat: no-repeat;
   width: 44px;
   height: 41px;

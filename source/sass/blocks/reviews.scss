@@ -32,7 +32,7 @@
   @media (min-width: $desktop-width) {
     content: "";
     position: absolute;
-    background-image: url("../../img/icons/quotes.svg");
+    background-image: url("../../icons/sprite.svg#quotes");
     background-repeat: no-repeat;
     width: 79px;
     height: 63px;
@@ -104,7 +104,7 @@
   @media (min-width: $desktop-width) {
     content: "";
     position: absolute;
-    background-image: url("../../img/icons/prev-arrow.svg");
+    background-image: url("../../icons/sprite.svg#prev-arrow");
     background-repeat: no-repeat;
     width: 22px;
     height: 41px;
@@ -117,7 +117,7 @@
   @media (min-width: $desktop-width) {
     content: "";
     position: absolute;
-    background-image: url("../../img/icons/next-arrow.svg");
+    background-image: url("../../icons/sprite.svg#next-arrow");
     background-repeat: no-repeat;
     width: 22px;
     height: 41px;

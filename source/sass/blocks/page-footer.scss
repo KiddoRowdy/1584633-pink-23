@@ -112,7 +112,7 @@
 .social__link--twitter::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/icons/twitter.svg");
+  background-image: url("../../icons/sprite.svg#twitter");
   background-repeat: no-repeat;
   width: 43px;
   height: 47px;
@@ -123,7 +123,7 @@
 .social__link--facebook::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/icons/facebook.svg");
+  background-image: url("../../icons/sprite.svg#facebook");
   background-repeat: no-repeat;
   width: 43px;
   height: 47px;
@@ -134,7 +134,7 @@
 .social__link--youtube::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/icons/youtube.svg");
+  background-image: url("../../icons/sprite.svg#youtube");
   background-repeat: no-repeat;
   width: 43px;
   height: 47px;
@@ -145,7 +145,7 @@
 .copyright__link::before {
   content: "";
   position: absolute;
-  background-image: url("../../img/icons/html-academy.svg");
+  background-image: url("../../icons/sprite.svg#html-academy");
   background-repeat: no-repeat;
   width: 27px;
   height: 34px;

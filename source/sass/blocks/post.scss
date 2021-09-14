@@ -101,12 +101,12 @@
   left: 32px;
   width: 44px;
   height: 44px;
-  background-image: url("../../img/icons/crop.svg");
+  background-image: url("../../icons/sprite.svg#crop");
 
   @media (min-width: $tablet-width) {
     bottom: 428px;
     left: 315px;
-    background-image: url("../../img/icons/crop-tablet.svg");
+    background-image: url("../../icons/sprite.svg#crop-tablet");
     width: 22px;
     height: 22px;
   }
@@ -116,7 +116,7 @@
     left: 372px;
     width: 44px;
     height: 44px;
-    background-image: url("../../img/icons/crop.svg");
+    background-image: url("../../icons/sprite.svg#crop");
   }
 }
 
@@ -127,14 +127,14 @@
   left: 119px;
   width: 44px;
   height: 44px;
-  background-image: url("../../img/icons/fill.svg");
+  background-image: url("../../icons/sprite.svg#fill");
 
   @media (min-width: $tablet-width) {
     bottom: 350px;
     left: 317px;
     width: 24px;
     height: 22px;
-    background-image: url("../../img/icons/fill-tablet.svg");
+    background-image: url("../../icons/sprite.svg#fill-tablet");
   }
 
   @media (min-width: $desktop-width) {
@@ -142,7 +142,7 @@
     left: 372px;
     width: 44px;
     height: 43px;
-    background-image: url("../../img/icons/fill-desktop.svg");
+    background-image: url("../../icons/sprite.svg#fill-desktop");
   }
 }
 
@@ -161,7 +161,7 @@
   right: 39px;
   width: 32px;
   height: 32px;
-  background-image: url("../../img/icons/contrast.svg");
+  background-image: url("../../icons/sprite.svg#contrast");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -169,7 +169,7 @@
     right: -63px;
     width: 16px;
     height: 16px;
-    background-image: url("../../img/icons/contrast-tablet.svg");
+    background-image: url("../../icons/sprite.svg#contrast-tablet");
   }
 
   @media (min-width: $desktop-width) {
@@ -177,7 +177,7 @@
     right: -139px;
     width: 32px;
     height: 32px;
-    background-image: url("../../img/icons/contrast-desktop.svg");
+    background-image: url("../../icons/sprite.svg#contrast-desktop");
   }
 }
 

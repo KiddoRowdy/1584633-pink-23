@@ -90,7 +90,7 @@
 .slider__toggle::after {
   content: "";
   display: inline-block;
-  background-image: url("../../img/icons/toggle.svg");
+  background-image: url("../../icons/sprite.svg#toggle");
   background-repeat: no-repeat;
   width: 6px;
   height: 6px;
@@ -106,7 +106,7 @@
 .slider__toggle--current::before {
   content: "";
   display: inline-block;
-  background-image: url("../../img/icons/toggle-current.svg");
+  background-image: url("../../icons/sprite.svg#toggle-current");
   background-repeat: no-repeat;
   width: 6px;
   height: 6px;
@@ -122,7 +122,7 @@
 .price__table-column-yes::after {
   content: "";
   display: inline-block;
-  background-image: url("../../img/icons/tick.svg");
+  background-image: url("../../icons/sprite.svg#tick");
   background-repeat: no-repeat;
   width: 31px;
   height: 21px;
@@ -134,7 +134,7 @@
 .price__table-column-no::after {
   content: "";
   display: inline-block;
-  background-image: url("../../img/icons/cross.svg");
+  background-image: url("../../icons/sprite.svg#cross");
   background-repeat: no-repeat;
   width: 27px;
   height: 27px;

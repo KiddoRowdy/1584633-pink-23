@@ -72,7 +72,7 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    background-image: url("../../img/icons/phone.svg");
+    background-image: url("../../icons/sprite.svg#phone");
     background-repeat: no-repeat;
     background-color: $basic-grey;
     background-position: 50%;
@@ -101,7 +101,7 @@
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
-    background-image: url("../../img/icons/mail.svg");
+    background-image: url("../../icons/sprite.svg#mail");
     background-repeat: no-repeat;
     background-color: $basic-grey;
     background-position: 50%;
