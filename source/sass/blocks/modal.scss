@@ -16,7 +16,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  color: $special-blue;
+  color: var(--special-blue);
   text-align: center;
   margin: 0 20px 37px 20px;
 
@@ -35,8 +35,8 @@
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  color: $basic-white;
-  background-color: $basic-green;
+  color: var(--basic-white);
+  background-color: var(--basic-green);
   border: none;
   width: 276px;
   height: 59px;
@@ -54,7 +54,7 @@
 
 .modal {
   order: 8;
-  box-shadow: 0 7px 15px $special-modal-shadow;
+  box-shadow: 0 7px 15px var(--special-modal-shadow);
   border-radius: 1px;
   margin: 0 auto;
   width: 320px;
@@ -86,12 +86,12 @@
 
 .modal__wrapper {
   @media (min-width: $tablet-width) {
-    background-color: $basic-grey;
+    background-color: var(--basic-grey);
     padding: 52px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $basic-grey;
+    background-color: var(--basic-grey);
     padding: 52px 191px;
   }
 }

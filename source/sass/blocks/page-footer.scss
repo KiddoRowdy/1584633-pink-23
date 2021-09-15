@@ -2,7 +2,7 @@
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
-  color: $basic-blue;
+  color: var(--basic-blue);
   margin: 50px 0 45px 0;
 
   @media (min-width: $tablet-width) {
@@ -96,7 +96,7 @@
   position: absolute;
   top: -16px;
   left: -20px;
-  border: 3px solid $special-blue-border;
+  border: 3px solid var(--special-blue)-border;
   border-radius: 50px;
   width: 54px;
   height: 54px;
@@ -106,7 +106,7 @@
 .social__link svg {
   width: 20px;
   height: 20px;
-  fill: $basic-pink;
+  fill: var(--basic-pink);
 }
 
 .social__link--twitter::before {

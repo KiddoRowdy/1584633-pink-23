@@ -1,10 +1,10 @@
 .app {
   order: 6;
-  background-color: $basic-grey;
+  background-color: var(--basic-grey);
 
   @media (min-width: $tablet-width) {
     order: 4;
-    background-color: $basic-white;
+    background-color: var(--basic-white);
   }
 
   @media (min-width: $desktop-width) {
@@ -18,7 +18,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    border: 2px solid $special-grey-border;
+    border: 2px solid var(--special-grey-border);
     border-radius: 1px;
   }
 }
@@ -27,7 +27,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  color: $basic-pink;
+  color: var(--basic-pink);
   text-transform: uppercase;
   text-align: center;
   margin: 0 0 40px 0;
@@ -36,7 +36,7 @@
 .app__item {
   font-size: 18px;
   font-weight: 400;
-  color: $special-blue;
+  color: var(--special-blue);
   margin: 0 0 38px 75px;
   position: relative;
 }
@@ -58,9 +58,9 @@
   top: -5px;
   width: 37px;
   height: 37px;
-  border: 2px solid $basic-grey;
+  border: 2px solid var(--basic-grey);
   border-radius: 50%;
-  background-color: $basic-white;
+  background-color: var(--basic-white);
 }
 
 .app__item-radio:checked + label::after {
@@ -70,6 +70,6 @@
   left: -42px;
   width: 15px;
   height: 15px;
-  background-color: $basic-pink;
+  background-color: var(--basic-pink);
   border-radius: 50%;
 }

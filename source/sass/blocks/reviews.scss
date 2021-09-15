@@ -16,7 +16,7 @@
 .reviews__text {
   font-size: 14px;
   font-weight: 400;
-  color: $special-blue;
+  color: var(--special-blue);
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -68,7 +68,7 @@
   @media (min-width: $tablet-width) {
     display: block;
     font-size: 14px;
-    color: $special-blue;
+    color: var(--special-blue);
   }
 }
 

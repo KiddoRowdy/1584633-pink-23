@@ -11,7 +11,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    border: 2px solid $special-grey-border;
+    border: 2px solid var(--special-grey-border);
     border-radius: 1px;
   }
 }
@@ -31,7 +31,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  color: $basic-pink;
+  color: var(--basic-pink);
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 22px;
@@ -44,13 +44,13 @@
 .comments__important {
   font-size: 14px;
   font-weight: 400;
-  color: $basic-blue;
+  color: var(--basic-blue);
   text-transform: uppercase;
   margin: 0;
 }
 
 .comments__important-star {
-  color: $basic-pink;
+  color: var(--basic-pink);
 
   @media (min-width: $tablet-width) {
     margin-left: 138px;
@@ -83,8 +83,8 @@
 .comments__submit {
   font-size: 18px;
   font-weight: 700;
-  color: $basic-white;
-  background-color: $basic-green;
+  color: var(--basic-white);
+  background-color: var(--basic-green);
   text-transform: uppercase;
   border: none;
   width: 276px;

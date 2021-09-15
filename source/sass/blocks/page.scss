@@ -1,5 +1,6 @@
 .page {
-  height: 100%;
+  min-height: 100%;
+  display: grid;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   line-height: 30px;
@@ -24,7 +25,22 @@
 }
 
 .page__body {
+  margin: 0;
   min-height: 100%;
   display: grid;
-  margin: 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr min-content;
+}
+
+.page__section {
+  &--askew-top {
+    &::before {
+      content: "";
+      position: absolute;
+      padding-top: calc(100% / 12);
+      height: 0;
+      width: 100%;
+      background: hsl(0, 0%, 100%) url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 100 1200 0v100H0Z' fill='%23F2F2F2'/%3E%3C/svg%3E") no-repeat center / cover;
+    }
+  }
 }

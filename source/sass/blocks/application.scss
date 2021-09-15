@@ -16,7 +16,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    border: 2px solid $special-grey-border;
+    border: 2px solid var(--special-grey-border);
     border-radius: 1px;
 
     @media (min-width: $desktop-width) {
@@ -28,7 +28,7 @@
 .application__field {
   font-size: 14px;
   font-weight: 400;
-  color: $basic-pink;
+  color: var(--basic-pink);
   text-transform: uppercase;
   margin: 0;
   position: relative;
@@ -46,7 +46,7 @@
     display: flex;
     font-size: 14px;
     font-weight: 400;
-    color: $basic-pink;
+    color: var(--basic-pink);
     text-transform: uppercase;
     text-align: center;
   }
@@ -74,7 +74,7 @@
     position: absolute;
     background-image: url("../../icons/sprite.svg#phone");
     background-repeat: no-repeat;
-    background-color: $basic-grey;
+    background-color: var(--basic-grey);
     background-position: 50%;
     width: 59px;
     height: 61px;
@@ -103,7 +103,7 @@
     position: absolute;
     background-image: url("../../icons/sprite.svg#mail");
     background-repeat: no-repeat;
-    background-color: $basic-grey;
+    background-color: var(--basic-grey);
     background-position: 50%;
     width: 59px;
     height: 61px;

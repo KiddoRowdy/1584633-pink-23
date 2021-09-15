@@ -17,54 +17,54 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
-    <div class="page__leveler">
-      <nav class="main-nav main-nav--closed main-nav--nojs page__leveler">
-        <a href="#" class="page-header__logo-link">
-          <div class="logo__wrapper logo__wrapper--desktop">
-            <svg class="logo__image" width="145" height="40">
-              <use href="./img/logo.svg#light-desktop"/>
-            </svg>
-          </div>
-          <div class="logo__wrapper logo__wrapper--tablet" hidden>
-            <svg class="logo__image" width="145" height="40">
-              <use href="./img/logo.svg#light-tablet"/>
-            </svg>
-          </div>
-          <div class="logo__wrapper logo__wrapper--mobile" hidden>
-            <svg class="logo__image" width="74" height="23">
-              <use href="./img/logo.svg#light-mobile"/>
-            </svg>
-          </div>
-        </a>
-        <button class="main-nav__toggle" type="button"><span class="page__hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list page__leveler">
-            <li class="main-nav__item main-nav__item--active">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="catalog.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="blank.html">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
+<header class="page-header page__header">
+  <div class="page__leveler page-header__wrapper">
+    <a href="#" class="page-header__logo-link logo">
+      <div class="logo__wrapper logo__wrapper--desktop">
+        <svg class="logo__image" width="145" height="40">
+          <use href="./img/logo.svg#light-desktop" />
+        </svg>
+      </div>
+      <div class="logo__wrapper logo__wrapper--tablet" hidden>
+        <svg class="logo__image" width="145" height="40">
+          <use href="./img/logo.svg#light-tablet" />
+        </svg>
+      </div>
+      <div class="logo__wrapper logo__wrapper--mobile" hidden>
+        <svg class="logo__image" width="74" height="23">
+          <use href="./img/logo.svg#light-mobile" />
+        </svg>
+      </div>
+    </a>
+    <nav class="main-nav main-nav--nojs page-header__nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="page__hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html" aria-current="page">
+            Фотографии
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="form.html">
+            Конкурс
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="blank.html">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
   <main class="page-main">
     <h1 class="page__hidden">Pink-Взгляните на жизнь иначе!</h1>
@@ -277,7 +277,7 @@
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

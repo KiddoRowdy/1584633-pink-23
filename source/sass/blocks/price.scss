@@ -1,30 +1,7 @@
 .price {
   order: 5;
-  background-color: $basic-grey;
+  background-color: var(--basic-grey);
   position: relative;
-}
-
-.price::before {
-  content: "";
-  position: absolute;
-  background-color: $basic-white;
-  top: -22px;
-  left: -7px;
-  height: 53px;
-  width: 110%;
-  transform: rotate(-4deg);
-
-  @media (min-width: $tablet-width) {
-    top: -60px;
-    height: 104px;
-    transform: rotate(-3deg);
-  }
-
-  @media (min-width: $desktop-width) {
-    top: -66px;
-    height: 97px;
-    transform: rotate(-3deg);
-  }
 }
 
 .price__table {
@@ -34,7 +11,7 @@
 
 .price__table-row {
   height: 59px;
-  background-color: $basic-white;
+  background-color: var(--basic-white);
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -55,14 +32,14 @@
 .price__table-column-head {
   font-size: 18px;
   font-weight: 300;
-  background-color: $special-blue;
-  color: $basic-white;
+  background-color: var(--special-blue);
+  color: var(--basic-white);
 }
 
 .price__table-column {
   font-size: 14px;
   font-weight: 400;
-  color: $special-blue;
+  color: var(--special-blue);
   width: 153px;
   text-align: center;
 
@@ -145,8 +122,8 @@
 
 .column-name {
   display: block;
-  background-color: $special-blue;
-  color: $basic-white;
+  background-color: var(--special-blue);
+  color: var(--basic-white);
   text-transform: uppercase;
   font-weight: 700;
 }
