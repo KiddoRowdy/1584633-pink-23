@@ -69,8 +69,8 @@
   display: inline-block;
   background-image: url("../../icons/sprite.svg#toggle");
   background-repeat: no-repeat;
-  width: 6px;
-  height: 6px;
+  width: 12px;
+  height: 12px;
   top: 21px;
   right: 16px;
   text-align: center;
@@ -85,8 +85,8 @@
   display: inline-block;
   background-image: url("../../icons/sprite.svg#toggle-current");
   background-repeat: no-repeat;
-  width: 6px;
-  height: 6px;
+  width: 12px;
+  height: 12px;
   top: 21px;
   right: 16px;
   text-align: center;
@@ -101,8 +101,9 @@
   display: inline-block;
   background-image: url("../../icons/sprite.svg#tick");
   background-repeat: no-repeat;
+  background-size: 31px;
   width: 31px;
-  height: 21px;
+  height: 31px;
   top: 21px;
   right: 16px;
   text-align: center;
@@ -113,8 +114,9 @@
   display: inline-block;
   background-image: url("../../icons/sprite.svg#cross");
   background-repeat: no-repeat;
-  width: 27px;
-  height: 27px;
+  background-size: 27px;
+  width: 33px;
+  height: 33px;
   top: 21px;
   right: 16px;
   text-align: center;

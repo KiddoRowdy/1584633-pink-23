@@ -110,6 +110,7 @@
   width: 13px;
   height: 12px;
   background-image: url("../../icons/sprite.svg#heart");
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     left: 257px;

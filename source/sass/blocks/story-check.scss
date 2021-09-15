@@ -83,9 +83,10 @@
 .check__item-checkbox:checked + label::after {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 3px;
   left: -44px;
-  width: 22px;
-  height: 16px;
+  width: 25px;
+  height: 23px;
   background-image: url("../../icons/sprite.svg#tick-checkbox");
+  background-repeat: no-repeat;
 }

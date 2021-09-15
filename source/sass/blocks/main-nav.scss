@@ -164,6 +164,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    font-weight: 300;
+    text-transform: none;
+
     &:hover {
       color: var(--basic-pink);
     }
