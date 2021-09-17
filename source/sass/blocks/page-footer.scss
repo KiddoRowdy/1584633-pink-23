@@ -3,7 +3,7 @@
   line-height: 29px;
   font-weight: 300;
   color: var(--basic-blue);
-  margin: 50px 0 45px 0;
+  margin: 22px 0 28px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
@@ -38,7 +38,7 @@
 }
 
 .page-footer__logo-link {
-  padding-top: 36px;
+  padding: 53px 0 71px 0;
 
   &:hover {
     --fill: #d22856;
@@ -50,8 +50,8 @@
 }
 
 .page-footer__copyright {
-  margin: 40px 20px 0 20px;
-  padding-top: 44px;
+  margin: 32px 47px 0;
+  padding: 45px 59px 0 0;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -60,11 +60,11 @@
 }
 
 .page-footer__wrapper {
-  padding-left: 16px;
+  padding-left: 20px;
 }
 
 .page-footer__social {
-  margin: 41px 0 0 25px;
+  margin: 0 0 0 16px;
   width: 195px;
 
   @media (min-width: $tablet-width) {
@@ -159,5 +159,21 @@
   @media (min-width: $desktop-width) {
     top: 3px;
     right: -39px;
+  }
+}
+
+.map__iframe {
+  width: 100%;
+  height: 200px;
+  background-image: url("../../img/map-mobile.jpg");
+
+  @media (min-width: $tablet-width) {
+    height: 374px;
+    background-image: url("../../img/map-tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 502px;
+    background-image: url("../../img/map-desktop.jpg");
   }
 }

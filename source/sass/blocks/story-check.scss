@@ -69,7 +69,7 @@
   font-size: 0;
 }
 
-.check__item-checkbox + label::before {
+.item-checkbox + label::before {
   content: "";
   position: absolute;
   left: -55px;
@@ -80,7 +80,7 @@
   background-color: var(--basic-white);
 }
 
-.check__item-checkbox:checked + label::after {
+.item-checkbox:checked + label::after {
   content: "";
   position: absolute;
   top: 3px;

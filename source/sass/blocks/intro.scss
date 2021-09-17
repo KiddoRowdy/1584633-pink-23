@@ -42,6 +42,7 @@
 }
 
 .intro--index {
+  margin-bottom: 40px;
   padding-top: 66px;
   background-image: url("../../img/phone-mobile@1x.png"), url("../../img/back-mobile@1x.jpg");
 
@@ -71,17 +72,19 @@
 }
 
 .intro__header {
-  font-size: 24px;
-  line-height: 29px;
-  font-weight: 300;
-  text-align: center;
-  margin: 0 20px 0 20px;
-  padding: 29px 0 34px 0;
+  @media (max-width: $mobile-only) {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0 20px 0 20px;
+    padding: 98px 0 82px 0;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 48px;
-    margin: 20px 0 88px 43px;
+    margin: 138px 0 42px 28px;
     width: 245px;
     padding: 0;
   }
@@ -95,7 +98,7 @@
 }
 
 .intro-download {
-  margin: 360px 0 40px 0;
+  margin: 321px 0 0 0;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -140,12 +143,7 @@
   font-weight: 700;
   border: 3px solid var(--basic-white);
   border-radius: 41px;
-  padding: 15px 36px 15px 35px;
-  margin: 0 0 32px 0;
-
-  @media (min-width: $tablet-width) {
-    font-size: 21px;
-  }
+  padding: 14px 35px 14px 35px;
 }
 
 .intro__item::marker {
@@ -160,7 +158,12 @@
   width: 47px;
   height: 56px;
   top: -12px;
-  left: 0;
+  left: 3px;
+
+  @media (min-width: $tablet-width) {
+    top: -12px;
+    left: 0;
+  }
 }
 
 .intro__item-android::after {
@@ -170,8 +173,13 @@
   background-repeat: no-repeat;
   width: 43px;
   height: 47px;
-  top: -6px;
-  left: 79px;
+  top: -7px;
+  left: 86px;
+
+  @media (min-width: $tablet-width) {
+    top: -8px;
+    left: 83px;
+  }
 }
 
 .intro__item-microsoft::after {
@@ -180,9 +188,14 @@
   background-image: url("../../icons/sprite.svg#microsoft");
   background-repeat: no-repeat;
   width: 44px;
-  height: 41px;
-  top: -4px;
-  right: 0;
+  height: 48px;
+  top: -5px;
+  right: -3px;
+
+  @media (min-width: $tablet-width) {
+    top: -8px;
+    right: 0;
+  }
 }
 
 .intro__text {
@@ -192,12 +205,12 @@
   margin: 0;
   width: 277px;
   text-align: center;
-  padding-bottom: 40px;
+  padding: 3px 0 31px 3px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     width: 300px;
-    padding: 0;
+    padding: 7px 0 76px 0;
   }
 }
 
@@ -232,11 +245,11 @@
   justify-content: space-between;
   align-items: center;
   width: 205px;
-  margin: 50px auto 31px auto;
+  margin: 58px auto 31px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin: 81px 0 38px 47px;
+    margin: 72px 0 38px 47px;
   }
 }
 
@@ -261,4 +274,8 @@
   @media (min-width: $desktop-width) {
     margin: 5px auto;
   }
+}
+
+.intro__text-photo {
+  margin: 0 17px 48px 17px;
 }

@@ -1114,7 +1114,7 @@
       width: 940px;
       grid-template-columns: 1fr 1fr 1fr; } }
 
-.photo__panorama-text {
+.panorama__text {
   font-size: 12px;
   font-weight: 700;
   line-height: 24px;
@@ -1125,17 +1125,17 @@
 .photo__block {
   margin-bottom: 20px; }
 
-.photo__text-panorama {
+.text-panorama {
   margin: 0 0 23px 0; }
   @media (min-width: 660px) {
-    .photo__text-panorama {
+    .text-panorama {
       order: 3; } }
 
 @media (min-width: 660px) {
-  .photo__headline-panorama {
+  .panorama__headline {
     order: 1; } }
 
-.photo__link {
+.link {
   font-size: 14px;
   font-weight: 700;
   line-height: 24px;
@@ -1148,35 +1148,35 @@
   text-transform: uppercase;
   margin-left: 3px; }
 
-.photo__text {
+.text {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   color: var(--special-blue);
   margin: 0 0 23px 0; }
   @media (min-width: 660px) {
-    .photo__text {
+    .text {
       height: 35px; } }
 
-.photo__intro {
+.intro-photo{
   font-size: 14px;
   color: var(--special-blue);
   text-align: center; }
   @media (min-width: 660px) {
-    .photo__intro {
+    .intro-photo{
       font-size: 18px;
       line-height: 30px; } }
 
 @media (min-width: 660px) {
-  .photo__intro-text {
+  .intro-text {
     margin: 70px auto 70px; } }
 
 @media (min-width: 980px) {
-  .photo__intro-text {
+  .intro-text {
     width: 572px;
     margin: 70px auto 85px; } }
 
-.photo__likes {
+.likes {
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
@@ -1184,10 +1184,10 @@
   text-transform: uppercase;
   margin: 0 0 0 45px; }
   @media (min-width: 660px) {
-    .photo__likes {
+    .likes {
       margin: 0; } }
 
-.photo__likes::before {
+.likes::before {
   content: "";
   position: absolute;
   bottom: 24px;
@@ -1197,57 +1197,57 @@
   background-image: url("../icons/sprite.svg#heart");
   background-repeat: no-repeat; }
   @media (min-width: 660px) {
-    .photo__likes::before {
+    .likes::before {
       left: 257px; } }
 
 @media (min-width: 660px) {
-  .photo__likes-panorama {
+  .panorama__likes {
     order: 2; } }
 
 @media (min-width: 660px) {
-  .photo__likes-panorama::before {
+  .panorama__likes::before {
     left: 550px;
     bottom: 96px; } }
 
 @media (min-width: 980px) {
-  .photo__likes-panorama::before {
+  .panorama__likes::before {
     left: 895px;
     bottom: 96px; } }
 
 .photo__headline {
   margin: 0 0 14px 0; }
 
-.photo__text-conclusion {
+.text-conclusion {
   line-height: 30px;
   text-align: center;
   margin: 30px auto 52px; }
   @media (min-width: 660px) {
-    .photo__text-conclusion {
+    .text-conclusion {
       font-size: 18px;
       line-height: 30px;
       width: 422px;
       grid-column: 1/3; } }
   @media (min-width: 980px) {
-    .photo__text-conclusion {
+    .text-conclusion {
       font-size: 18px;
       line-height: 30px;
       width: 422px;
       grid-column: 1/4; } }
 
-.photo__item-panorama {
+.panorama__item {
   padding: 0;
   display: flex;
   flex-direction: column; }
 
-.photo__img-panorama {
+.panorama-pic {
   width: 100%;
   height: 137px; }
   @media (min-width: 660px) {
-    .photo__img-panorama {
+    .panorama-pic {
       width: 100%;
       height: 509px; } }
   @media (min-width: 980px) {
-    .photo__img-panorama {
+    .panorama-pic {
       width: 100%;
       height: 506px; } }
 
@@ -1439,14 +1439,14 @@
   background-color: var(--basic-white);
   border-radius: 50%; }
 
-.tools__bar {
+.post__tools-bar {
   background-color: var(--special-blue);
   height: 2px;
   width: 240px;
   margin-left: 20px;
   position: relative; }
   @media (min-width: 660px) {
-    .tools__bar {
+    .post__tools-bar {
       margin-left: 50px; } }
 
 @media (min-width: 660px) {
@@ -1790,7 +1790,7 @@
 .story-check__item::marker {
   font-size: 0; }
 
-.check__item-checkbox + label::before {
+.item-checkbox + label::before {
   content: "";
   position: absolute;
   left: -55px;
@@ -1800,7 +1800,7 @@
   border: 2px solid var(--basic-grey);
   background-color: var(--basic-white); }
 
-.check__item-checkbox:checked + label::after {
+.item-checkbox:checked + label::after {
   content: "";
   position: absolute;
   top: 3px;
@@ -1868,7 +1868,7 @@
       margin: 0 30px 40px 30px; } }
 
 @media (min-width: 980px) {
-  .page-main__form {
+  .page-main-form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 300px; } }

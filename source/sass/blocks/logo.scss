@@ -30,3 +30,11 @@
     }
   }
 }
+
+.logo__image-footer {
+  padding-left: 51px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}

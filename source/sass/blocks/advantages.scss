@@ -1,5 +1,9 @@
 .advantages {
   background-color: var(--basic-grey);
+
+  @media (min-width: $desktop-width) {
+    margin-top: 104px;
+  }
 }
 
 .advantages-wrapper {
@@ -21,6 +25,10 @@
 }
 
 .advantages__item {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+
   @media (min-width: $desktop-width) {
     text-align: center;
   }
@@ -34,6 +42,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    padding: 86px 0 0 44px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,7 +57,7 @@
 .advantages__title {
   font-size: 18px;
   line-height: 24px;
-  margin: 0 0 24px 0;
+  margin: 0 0 12px 0;
 
   @media (min-width: $desktop-width) {
     width: 244px;
@@ -63,7 +72,11 @@
   font-weight: 400;
   line-height: 24px;
   color: var(--special-blue);
-  margin: 0 0 46px 0;
+  margin: 0 0 31px 0;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 34px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
