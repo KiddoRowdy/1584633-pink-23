@@ -1,22 +1,33 @@
+.story-form {
+  @media (min-width: $tablet-width) {
+    padding-left: 53px;
+  }
+}
+
 .story-form__field {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
   color: var(--basic-pink);
+  margin: 0;
 }
 
 .story-form:last-child {
-  margin-bottom: 44px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .story-form__input {
   width: 276px;
   height: 59px;
-  margin-top: 15px;
+  margin: 5px 0 14px;
 
   @media (min-width: $tablet-width) {
-    width: 490px;
-    margin-left: 18px;
+    width: 457px;
+    margin: 0 0 51px 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,11 +38,12 @@
 
 .story-form__input-name {
   @media (min-width: $tablet-width) {
-    margin-left: 58px;
+    width: 498px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 58px;
+    width: 370px;
+    margin-left: 17px;
   }
 }
 

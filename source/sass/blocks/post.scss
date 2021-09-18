@@ -8,6 +8,7 @@
     height: 511px;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,10 +26,10 @@
 }
 
 .post__buttons {
-  margin: 34px 0 0 0;
+  margin: 63px 0 0 9px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 31px;
+    margin: 56px 0 0 44px;
   }
 }
 
@@ -43,13 +44,22 @@
 .post__button__button-send {
   color: var(--basic-pink);
   border: 3px solid var(--basic-pink);
-  padding: 17px 91px;
+  padding: 17px 81px;
+  margin-bottom: 21px;
+
+  @media (min-width: $desktop-width) {
+    padding: 17px 49px;
+  }
 }
 
 .post__button__button-cancel {
   color: var(--basic-blue);
   border: 3px solid var(--basic-blue);
-  padding: 17px 104px;
+  padding: 17px 94px;
+
+  @media (min-width: $desktop-width) {
+    padding: 17px 63px;
+  }
 }
 
 .post__tools {
@@ -63,10 +73,11 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content min-content min-content min-content;
+    grid-template-rows: min-content min-content min-content 251px;
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 415px;
     grid-column-gap: 90px;
   }
 }
@@ -97,25 +108,26 @@
 .post__crop label::before {
   content: "";
   position: absolute;
-  bottom: 246px;
-  left: 32px;
-  width: 44px;
-  height: 44px;
+  bottom: 251px;
+  left: 40px;
+  width: 46px;
+  height: 46px;
   background-image: url("../../icons/sprite.svg#crop");
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    bottom: 428px;
-    left: 315px;
+    bottom: 429px;
+    left: 346px;
     background-image: url("../../icons/sprite.svg#crop-tablet");
-    width: 22px;
-    height: 22px;
+    width: 25px;
+    height: 25px;
   }
 
   @media (min-width: $desktop-width) {
     bottom: 419px;
-    left: 372px;
-    width: 44px;
-    height: 44px;
+    left: 401px;
+    width: 46px;
+    height: 46px;
     background-image: url("../../icons/sprite.svg#crop");
   }
 }
@@ -123,31 +135,32 @@
 .post__fill label::before {
   content: "";
   position: absolute;
-  bottom: 246px;
+  bottom: 250px;
   left: 119px;
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   background-image: url("../../icons/sprite.svg#fill");
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    bottom: 350px;
-    left: 317px;
-    width: 24px;
-    height: 22px;
+    bottom: 353px;
+    left: 346px;
+    width: 27px;
+    height: 27px;
     background-image: url("../../icons/sprite.svg#fill-tablet");
   }
 
   @media (min-width: $desktop-width) {
     bottom: 342px;
-    left: 372px;
-    width: 44px;
-    height: 43px;
+    left: 399px;
+    width: 54px;
+    height: 54px;
     background-image: url("../../icons/sprite.svg#fill-desktop");
   }
 }
 
 .post__contrast {
-  margin: 125px 0 0 0;
+  margin: 108px 0 0 0;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -157,26 +170,26 @@
 .post__contrast label::before {
   content: "";
   position: absolute;
-  bottom: 252px;
+  bottom: 255px;
   right: 39px;
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   background-image: url("../../icons/sprite.svg#contrast");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    bottom: 274px;
-    right: -63px;
-    width: 16px;
-    height: 16px;
+    bottom: 289px;
+    right: -93px;
+    width: 19px;
+    height: 19px;
     background-image: url("../../icons/sprite.svg#contrast-tablet");
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 266px;
-    right: -139px;
-    width: 32px;
-    height: 32px;
+    bottom: 279px;
+    right: -167px;
+    width: 38px;
+    height: 38px;
     background-image: url("../../icons/sprite.svg#contrast-desktop");
   }
 }
@@ -212,13 +225,13 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin-left: 50px;
+    margin-left: 77px;
   }
 }
 
 .post__form {
   @media (min-width: $tablet-width) {
-    padding-top: 37px;
+    padding-top: 55px;
   }
 
   @media (min-width: $desktop-width) {

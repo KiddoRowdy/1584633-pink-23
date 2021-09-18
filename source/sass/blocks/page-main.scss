@@ -1,16 +1,10 @@
 .page-main-form {
+  display: grid;
+  grid-template-columns: 1fr;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px;
+    grid-template-rows: min-content;
   }
 }
-
-/*
-.page-main__wrapper {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-*/

@@ -5,11 +5,11 @@
   @media (min-width: $tablet-width) {
     order: 4;
     background-color: var(--basic-white);
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 431px;
-    margin: 19px 0 0 40px;
+    margin: 0 0 0 40px;
   }
 }
 
@@ -31,14 +31,28 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0 0 40px 0;
+  padding-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 0 54px 0;
+  }
 }
 
 .app__item {
   font-size: 18px;
   font-weight: 400;
   color: var(--special-blue);
-  margin: 0 0 38px 75px;
+  margin: 0 0 45px 69px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 45px 117px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 45px 117px;
+  }
 }
 
 .app__item::marker {
@@ -54,22 +68,37 @@
 .app__item-radio + label::before {
   content: "";
   position: absolute;
-  left: -55px;
+  left: -70px;
   top: -5px;
   width: 37px;
   height: 37px;
   border: 2px solid var(--basic-grey);
   border-radius: 50%;
   background-color: var(--basic-white);
+
+  @media (min-width: $tablet-width) {
+    left: -61px;
+  }
 }
 
 .app__item-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 8px;
-  left: -42px;
+  top: 7px;
+  left: -57px;
   width: 15px;
   height: 15px;
   background-color: var(--basic-pink);
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    left: -48px;
+  }
+}
+
+.app__form {
+  @media (min-width: $desktop-width) {
+    width: 431px;
+    margin: 0 0 0 0;
+  }
 }

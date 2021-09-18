@@ -34,10 +34,17 @@
 
 .intro--form {
   background-position: 50% -65px, 50% -105px;
+  margin-bottom: 44px;
 
   @media (min-width: $tablet-width) {
     background-position: 50% -101px, 50% -105px;
     width: 100%;
+    text-align: center;
+    padding: 74px 0 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 65px 0 0;
   }
 }
 
@@ -87,6 +94,7 @@
     margin: 138px 0 42px 28px;
     width: 245px;
     padding: 0;
+    font-weight: 300;
   }
 
   @media (min-width: $desktop-width) {
@@ -108,33 +116,7 @@
     margin: 0 0 51px 0;
   }
 }
-/*
-.intro__header::after {
-  content: " ";
-  background-image: url("../../img/mobile/phone-mobile.png");
-  position: absolute;
-  top: 105px;
-  right: 1px;
-  width: 320px;
-  height: 286px;
 
-  @media (min-width: $tablet-width) {
-    top: 80px;
-    right: 1px;
-    width: 660px;
-    height: 545px;
-    background-image: url("../../img/tablet/phone-tablet.png");
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 103px;
-    right: 1px;
-    width: 1050px;
-    height: 645px;
-    background-image: url("../../img/desktop/phone-desktop.png");
-  }
-}
-*/
 .intro-link {
   color: var(--basic-white);
   text-decoration: none;
@@ -224,17 +206,19 @@
 
 .intro__header-form {
   line-height: 33px;
+  padding: 98px 0 43px;
 
   @media (min-width: $tablet-width) {
     font-size: 50px;
     line-height: 68px;
     width: 620px;
-    margin: 0 0 26px 0;
+    margin: 0 0 17px 0;
+    padding: 103px 0 43px;
   }
 
   @media (min-width: $desktop-width) {
     width: 747px;
-    margin: 0 0 26px 100px;
+    margin: 0 0 46px 97px;
   }
 }
 
@@ -255,10 +239,16 @@
 
 .intro-catalog {
   background-position: 50% -65px, 50% -105px;
+  margin: 0 0 43px 0;
 
   @media (min-width: $tablet-width) {
     background-position: 50% -101px, 50% -105px;
     width: 100%;
+    padding-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 1px;
   }
 }
 
@@ -267,15 +257,23 @@
     font-size: 50px;
     line-height: 68px;
     text-align: center;
-    margin: 5px auto 85px;
+    margin: 103px auto 85px;
     width: 358px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 5px auto;
+    margin: 95px auto 88px;
   }
 }
 
-.intro__text-photo {
-  margin: 0 17px 48px 17px;
+.intro-photo__text {
+  margin: 35px 17px 49px 17px;
+
+  @media (min-width: $desktop-width) {
+    margin: 91px 30px 77px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 91px 160px 89px 160px;
+  }
 }

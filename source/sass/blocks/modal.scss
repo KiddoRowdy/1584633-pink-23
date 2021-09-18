@@ -59,6 +59,7 @@
   margin: 0 auto;
   width: 320px;
   padding-top: 1px;
+  display: none;
 
   @media (min-width: $tablet-width) {
     width: 460px;
