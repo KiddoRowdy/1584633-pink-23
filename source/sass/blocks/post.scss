@@ -31,6 +31,13 @@
   @media (min-width: $tablet-width) {
     margin: 56px 0 0 44px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: flex-start;
+    margin: 132px 0 0 10px;
+    justify-content: space-between;
+  }
 }
 
 .post__button {
@@ -48,7 +55,7 @@
   margin-bottom: 21px;
 
   @media (min-width: $desktop-width) {
-    padding: 17px 49px;
+    padding: 17px 41px;
   }
 }
 
@@ -58,7 +65,7 @@
   padding: 17px 94px;
 
   @media (min-width: $desktop-width) {
-    padding: 17px 63px;
+    padding: 17px 53px;
   }
 }
 
