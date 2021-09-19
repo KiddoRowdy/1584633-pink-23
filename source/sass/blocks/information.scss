@@ -8,6 +8,7 @@
 
   @media (min-width: $desktop-width) {
     height: 933px;
+    grid-column: 1/3;
   }
 
   .information__img {
