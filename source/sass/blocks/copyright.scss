@@ -4,3 +4,15 @@
   line-height: 18px;
   color: var(--basic-blue);
 }
+
+.copyright__link {
+  display: flex;
+  gap: 15px;
+}
+
+.copyright__link::after {
+  content: "";
+  background: url("../../icons/sprite.svg#html-academy") no-repeat center / 34px;
+  width: 27px;
+  height: 34px;
+}

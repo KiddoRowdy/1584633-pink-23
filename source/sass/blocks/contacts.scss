@@ -1,4 +1,12 @@
-.contacts-title {
+.contacts {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.contacts__title {
   font-size: 18px;
   line-height: 25px;
   font-weight: 700;
@@ -6,7 +14,7 @@
   margin-bottom: 10px;
 }
 
-.contacts-text {
+.contacts__text {
   font-size: 24px;
   font-weight: 300;
   line-height: 32px;
@@ -14,16 +22,16 @@
   margin: 10px 0 13px 0;
 }
 
-.contacts-text a {
+.contacts__link {
   color: var(--basic-pink);
   text-decoration: none;
 }
 
-.contacts-text-phone {
+.contacts__text--phone {
   order: 1;
 }
 
-.contacts-text-email {
+.contacts__text--email {
   order: 2;
 
   @media (min-width: $desktop-width) {
@@ -31,7 +39,7 @@
   }
 }
 
-.contacts-text-adress {
+.contacts__text--adress {
   order: 3;
 
   @media (min-width: $desktop-width) {

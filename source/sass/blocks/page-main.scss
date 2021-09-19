@@ -1,14 +1,12 @@
 .page-main {
   display: grid;
-}
 
-.page-main-form {
-  display: grid;
-  grid-template-columns: 1fr;
+  &--form {
+    grid-template-columns: 1fr;
 
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content;
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: min-content;
+    }
   }
 }
