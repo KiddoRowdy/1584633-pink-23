@@ -1,5 +1,9 @@
 .panorama {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/3;
+  }
 }
 
 .panorama__headline {
