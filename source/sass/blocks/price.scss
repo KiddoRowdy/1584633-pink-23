@@ -25,12 +25,18 @@
 
 .price__table-row {
   display: grid;
-  grid-template-columns: repeat(3, 276px);
   gap: 2px;
   background-color: var(--light-grey);
-  transform: translateX(-256px);
+
+  @media (max-width: $mobile-only) {
+    grid-template-columns: repeat(3, 276px);
+    transform: translateX(-256px);
+    width: 100%;
+  }
 
   @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(4, 1fr);
+
     &--head {
       height: 75px;
     }
@@ -61,6 +67,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 5px 17px;
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,10 +109,10 @@
   background-color: var(--special-blue);
   color: var(--basic-white);
   text-transform: uppercase;
+  font-size: 16px;
   font-weight: 700;
 
   @media (max-width: $mobile-only) {
-    font-size: 16px;
     margin-bottom: -3px;
   }
 }

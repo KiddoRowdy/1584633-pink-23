@@ -4,6 +4,10 @@
   justify-content: center;
   margin-block: 16px;
 
+  @media (min-width: $tablet-width) {
+    margin-block: 36px 8px;
+  }
+
   @media (min-width: $desktop-width) {
     display: none;
   }
