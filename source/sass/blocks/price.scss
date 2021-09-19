@@ -49,6 +49,7 @@
   background-color: var(--special-blue);
   color: var(--basic-white);
   padding: 12px 13px 29px;
+  position: relative;
 }
 
 .price__table-column {
@@ -121,4 +122,15 @@
   text-align: center;
   margin: 0;
   padding: 0;
+}
+
+.price__table-column-head--hit::before {
+  content: "";
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  background-image: url("../../icons/sprite.svg#hit");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
 }
