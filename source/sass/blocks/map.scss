@@ -14,3 +14,19 @@
     background-image: url("../../img/map-desktop.jpg");
   }
 }
+.map {
+  position: relative;
+}
+
+.map::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    width: 1439px;
+    height: 123px;
+    background-image: url("../../icons/sprite.svg#triangle-footer");
+    background-repeat: no-repeat;
+    top: 1px;
+    left: 0;
+  }
+}
