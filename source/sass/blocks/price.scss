@@ -36,10 +36,6 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(4, 1fr);
-
-    &--head {
-      height: 75px;
-    }
   }
 }
 
@@ -48,8 +44,13 @@
   font-weight: 300;
   background-color: var(--special-blue);
   color: var(--basic-white);
-  padding: 12px 13px 29px;
+  padding: 12px 13px 7px;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    padding: 17px 13px 21px;
+  }
 }
 
 .price__table-column {
@@ -64,15 +65,17 @@
 
   &:first-child {
     text-align: left;
+    justify-content: flex-start;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 5px 17px;
+    padding: 6px 3px;
     justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 5px 22px;
+    padding: 13px 22px;
+    font-size: 18px;
   }
 
   &--yes {
