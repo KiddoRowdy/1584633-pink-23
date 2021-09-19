@@ -1,3 +1,17 @@
+.page-footer {
+  text-align: center;
+  padding-top: 19px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
 .page-footer__text {
   font-size: 24px;
   line-height: 29px;
@@ -17,18 +31,6 @@
   }
 }
 
-.page-footer {
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    .page-footer__contacts {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-  }
-}
-
 .page-footer__bottom {
   @media (min-width: $tablet-width) {
     height: 127px;
@@ -37,8 +39,13 @@
   }
 }
 
+.page-footer__links {
+  display: grid;
+  place-items: center;
+}
+
 .page-footer__logo-link {
-  padding: 53px 0 71px 0;
+  padding: 53px 0 55px;
 
   &:hover {
     --fill: #d22856;
@@ -50,29 +57,13 @@
 }
 
 .page-footer__copyright {
-  margin: 32px 47px 0;
-  padding: 45px 59px 0 0;
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 38px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-  }
-}
-
-.page-footer__wrapper {
-  padding-left: 20px;
-}
-
-.page-footer__social {
-  margin: 0 0 0 16px;
-  width: 195px;
-
-  @media (min-width: $tablet-width) {
-    margin: 41px 14px 0 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 41px 14px 0 0;
   }
 }
 
@@ -82,84 +73,74 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 8px;
 }
 
 .social__item {
   position: relative;
 }
 
-.social__link::after {
-  content: "";
-  position: absolute;
-  top: -16px;
-  left: -20px;
-  border: 3px solid var(--special-blue-border);
-  border-radius: 50px;
-  width: 48px;
-  height: 48px;
-  display: inline-block;
+.social__link {
+  display: grid;
+
+  &::before {
+    box-sizing: border-box;
+    content: "";
+    grid-area: 1 / 1 / 2/ 2;
+    border: 3px solid var(--special-blue-border);
+    border-radius: 50px;
+    width: 54px;
+    height: 54px;
+    opacity: 0.1;
+  }
+
+  &::after {
+    box-sizing: border-box;
+    content: "";
+    grid-area: 1 / 1 / 2/ 2;
+    border-radius: 50px;
+    width: 54px;
+    height: 54px;
+    background: var(--social-icon) no-repeat center / 20px;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+
+  &:active::before {
+    opacity: 0.1;
+  }
+
+  &:active::after {
+    opacity: 0.3;
+  }
+
+  &--twitter::after {
+    --social-icon: url("../../icons/sprite.svg#twitter");
+  }
+
+  &--facebook::after {
+    --social-icon: url("../../icons/sprite.svg#facebook");
+  }
+
+  &--youtube::after {
+    --social-icon: url("../../icons/sprite.svg#youtube");
+  }
 }
 
-.social__link svg {
-  width: 20px;
-  height: 20px;
-  fill: var(--basic-pink);
+.copyright__link {
+  display: flex;
+  gap: 15px;
 }
 
-.social__link--twitter::before {
+.copyright__link::after {
   content: "";
-  position: absolute;
-  background-image: url("../../icons/sprite.svg#twitter");
-  background-repeat: no-repeat;
-  width: 18px;
-  height: 14px;
-  top: 4px;
-  right: -20px;
-}
-
-.social__link--facebook::before {
-  content: "";
-  position: absolute;
-  background-image: url("../../icons/sprite.svg#facebook");
-  background-repeat: no-repeat;
-  width: 11px;
-  height: 26px;
-  top: 3px;
-  right: -12px;
-}
-
-.social__link--youtube::before {
-  content: "";
-  position: absolute;
-  background-image: url("../../icons/sprite.svg#youtube");
-  background-repeat: no-repeat;
-  width: 15px;
-  height: 13px;
-  top: 5px;
-  right: -18px;
-}
-
-.copyright__link::before {
-  content: "";
-  position: absolute;
-  background-image: url("../../icons/sprite.svg#html-academy");
-  background-repeat: no-repeat;
+  background: url("../../icons/sprite.svg#html-academy") no-repeat center / 34px;
   width: 27px;
   height: 34px;
-  top: 45px;
-  right: 28px;
-
-  @media (min-width: $tablet-width) {
-    top: 3px;
-    right: -39px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: 3px;
-    right: -39px;
-  }
 }
 
 .map__iframe {

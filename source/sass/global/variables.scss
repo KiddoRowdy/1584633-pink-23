@@ -15,11 +15,12 @@ $not-desktop: 979.5px;
   --transparent-black: hsla(0, 0%, 0%, 0.3);
   --special-blue: hsla(211, 27%, 21%, 1);
   --special-blue-pale: hsla(211, 15%, 33%, 1);
-  --special-blue-border: hsla(211, 27%, 21%, 0.1);
+  --special-blue-border: hsla(211, 27%, 21%, 1);
   --special-grey-timer: hsla(0, 0%, 87%, 1);
   --special-grey-border: hsla(0, 0%, 95%, 1);
   --special-modal-shadow: rgba(0, 1, 1, 0.15);
   --special-black-border: hsla(0, 0%, 0%, 0.1);
+  --light-grey: hsl(0, 0%, 90%);
   --header-min-height: 66px;
 
   @media (min-width: $tablet-width) {

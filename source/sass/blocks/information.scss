@@ -1,29 +1,4 @@
-.information__slogan {
-  font-size: 24px;
-  line-height: 29px;
-  font-weight: 300;
-  color: var(--basic-blue);
-  margin: 0 20px 142px 20px;
-  width: 280px;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    font-size: 40px;
-    line-height: 55px;
-    width: 588px;
-    margin: 0 0 18px 140px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 50px;
-    line-height: 68px;
-    margin: 0 auto 100px;
-  }
-}
-
 .information {
-  order: 2;
-  height: 828px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -42,8 +17,47 @@
   }
 }
 
+.information__slogan {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  color: var(--basic-blue);
+  margin: 0 20px 34px;
+  width: 280px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 55px;
+    width: 588px;
+    margin: 0 0 18px 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    margin: 0 auto 100px;
+  }
+
+  & span {
+    @media (max-width: $mobile-only) {
+      display: block;
+      margin-bottom: 29px;
+    }
+  }
+}
+
+.information__img-wrapper {
+  margin-top: 10px;
+  height: 277px;
+  width: 157px;
+  place-self: center;
+}
+
 .information__img {
-  margin: 0 auto;
+  object-fit: cover;
+  object-position: top;
+  height: 100%;
 
   @media (min-width: $tablet-width) {
     width: 267px;
