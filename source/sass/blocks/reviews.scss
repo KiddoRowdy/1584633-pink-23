@@ -112,7 +112,12 @@
     height: 41px;
     top: -208px;
     right: 413px;
+    cursor: pointer;
   }
+}
+
+.reviews__prev:hover::before {
+  color: var(--basic-blue);
 }
 
 .reviews__next::after {

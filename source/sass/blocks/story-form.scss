@@ -24,6 +24,7 @@
   width: 276px;
   height: 59px;
   margin: 5px 0 14px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 457px;
@@ -35,6 +36,15 @@
     margin-left: 18px;
   }
 }
+
+.story-form__input:hover {
+  border-color: var(--special-blue);
+}
+
+.story-form__input:active {
+  border-color: var(--special-pink);
+}
+
 
 .story-form__input-name {
   @media (min-width: $tablet-width) {

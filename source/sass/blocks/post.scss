@@ -53,20 +53,43 @@
   border: 3px solid var(--basic-pink);
   padding: 17px 81px;
   margin-bottom: 21px;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     padding: 17px 41px;
   }
 }
 
+.post__button__button-send:hover {
+  background-color: var(--basic-pink);
+  color: var(--basic-white);
+}
+
+.post__button__button-send:active {
+  background-color: var(--basic-pink);
+  color: var(--special-white);
+}
+
 .post__button__button-cancel {
-  color: var(--basic-blue);
-  border: 3px solid var(--basic-blue);
+  color: var(--special-blue-border);
+  border: 3px solid var(--special-blue-border);
   padding: 17px 94px;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     padding: 17px 53px;
   }
+}
+
+.post__button__button-cancel:hover {
+  color: var(--special-blue-cancel);
+  border-color: var(--special-blue-cancel);
+}
+
+.post__button__button-cancel:active {
+  border-color: var(--special-blue-cancel);
+  background-color: var(--special-blue-cancel);
+  color: var(--special-white);
 }
 
 .post__tools {
@@ -121,6 +144,7 @@
   height: 46px;
   background-image: url("../../icons/sprite.svg#crop");
   background-repeat: no-repeat;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     bottom: 429px;
@@ -148,6 +172,7 @@
   height: 48px;
   background-image: url("../../icons/sprite.svg#fill");
   background-repeat: no-repeat;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     bottom: 353px;
@@ -183,6 +208,7 @@
   height: 36px;
   background-image: url("../../icons/sprite.svg#contrast");
   background-repeat: no-repeat;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     bottom: 289px;

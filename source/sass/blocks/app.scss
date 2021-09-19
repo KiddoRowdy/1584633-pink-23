@@ -75,10 +75,20 @@
   border: 2px solid var(--basic-grey);
   border-radius: 50%;
   background-color: var(--basic-white);
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     left: -61px;
   }
+}
+
+.app__item-radio:hover + label::before,
+.app__item-radio:focus + label::before {
+  border-color: var(--special-blue);
+}
+
+.app__item-radio:active + label::before {
+  border-color: var(--basic-pink);
 }
 
 .app__item-radio:checked + label::after {
