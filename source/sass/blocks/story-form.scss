@@ -33,7 +33,7 @@
 
   @media (min-width: $desktop-width) {
     width: 327px;
-    margin: 0 0 47px 18px;
+    margin: 0 0 50px 18px;
   }
 }
 
@@ -58,5 +58,9 @@
 }
 
 .story-form__label {
-  margin: 0 0 0 0;
+  margin: 0 0 0 22px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 0;
+  }
 }

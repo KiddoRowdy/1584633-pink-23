@@ -15,18 +15,7 @@
     margin: 0;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 24px;
-    left: 18px;
-    width: 21px;
-    height: 16px;
-    background-image: url("../../icons/sprite.svg#heart");
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      left: 257px;
-    }
+  @media (min-width: $desktop-width) {
+    margin-right: 34px;
   }
 }

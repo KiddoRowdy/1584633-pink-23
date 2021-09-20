@@ -134,23 +134,26 @@
 
   &--form {
     line-height: 33px;
-    padding: 98px 0 43px;
+    padding: 69px 0 22px;
 
     @media (min-width: $tablet-width) {
       font-size: 50px;
       line-height: 68px;
       width: 620px;
       margin: 0 0 17px 0;
-      padding: 103px 0 43px;
+      padding: 110px 0 43px;
     }
 
     @media (min-width: $desktop-width) {
       width: 747px;
       margin: 0 0 46px 97px;
+      padding: 105px 0 43px;
     }
   }
 
   &--photo {
+    margin: 97px 27px 82px;
+
     @media (min-width: $tablet-width) {
       font-size: 50px;
       line-height: 68px;
@@ -181,7 +184,7 @@
   font-weight: 700;
   border: 3px solid var(--basic-white);
   border-radius: 41px;
-  padding: 13px 36px;
+  padding: 13px 35px;
 
   @media (min-width: $tablet-width) {
     padding: 12px 46px;

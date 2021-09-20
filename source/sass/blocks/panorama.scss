@@ -33,14 +33,23 @@
   }
 
   &::before {
+    content: "";
+    position: absolute;
+    bottom: 24px;
+    left: 18px;
+    width: 21px;
+    height: 16px;
+    background-image: url("../../icons/sprite.svg#heart");
+    background-repeat: no-repeat;
+
     @media (min-width: $tablet-width) {
       left: 563px;
-      bottom: 88px;
+      bottom: 71px;
     }
 
     @media (min-width: $desktop-width) {
-      left: 909px;
-      bottom: 56px;
+      left: 881px;
+      bottom: 44px;
     }
   }
 }
@@ -58,12 +67,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 17px 70px 19px 30px;
-    margin-bottom: 13px;
+    margin-bottom: 59px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 18px 40px 0 25px;
-    margin-bottom: 44px;
+    margin-bottom: 62px;
   }
 }
 

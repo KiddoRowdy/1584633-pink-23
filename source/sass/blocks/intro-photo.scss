@@ -14,13 +14,13 @@
 }
 
 .intro-photo__text {
-  margin: 35px 17px 49px 17px;
+  margin: 1px 17px 50px 17px;
 
-  @media (min-width: $desktop-width) {
-    margin: 91px 30px 77px 30px;
+  @media (min-width: $tablet-width) {
+    margin: 48px 30px 77px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 91px 160px 89px 160px;
+    margin: 48px 160px 89px 160px;
   }
 }
