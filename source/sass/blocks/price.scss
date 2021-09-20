@@ -1,6 +1,14 @@
 .price {
-  padding-bottom: 30px;
+  padding-bottom: 46px;
   background-color: var(--basic-grey);
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 62px;
+  }
 }
 
 .price__table {
@@ -9,6 +17,10 @@
   margin: 103px 0 38px;
   border: 0;
   border-collapse: collapse;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 156px;
+  }
 
   & tbody {
     box-sizing: border-box;
@@ -44,8 +56,15 @@
   font-weight: 300;
   background-color: var(--special-blue);
   color: var(--basic-white);
-  padding: 12px 13px 7px;
   position: relative;
+
+  @media (max-width: $mobile-only) {
+    padding: 12px 13px 29px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0 8px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 24px;
@@ -69,7 +88,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 6px 3px;
+    padding: 7px 3px;
     justify-content: center;
   }
 
@@ -94,16 +113,26 @@
     height: 31px;
   }
 
-  @media (max-width: $mobile-only) {
-    &::before {
+  &::before {
+    @media (max-width: $mobile-only) {
       content: attr(data-title);
       padding-inline: 3px;
       text-transform: uppercase;
     }
+  }
 
-    &--title {
+  &--title {
+    @media (max-width: $mobile-only) {
       position: absolute;
       transform: scale(0);
+    }
+
+    @media (max-width: $tablet-width) {
+      padding-left: 15px;
+
+      &::after {
+        content: initial;
+      }
     }
   }
 }
@@ -121,10 +150,14 @@
   }
 }
 
-.price__toggles {
+.price__toggles.price__toggles {
   text-align: center;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .price__table-column-head--hit::before {
@@ -136,4 +169,9 @@
   background-repeat: no-repeat;
   top: 0;
   left: 0;
+
+  @media (max-width: $mobile-only) {
+    width: 72px;
+    height: 72px;
+  }
 }

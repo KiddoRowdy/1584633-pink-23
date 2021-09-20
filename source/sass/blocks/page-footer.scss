@@ -3,6 +3,10 @@
   padding-top: 19px;
   padding-bottom: 40px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .page-footer__text {
@@ -15,20 +19,25 @@
   @media (min-width: $tablet-width) {
     font-size: 40px;
     line-height: 55px;
+    margin-bottom: 16px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
-    margin: 74px 150px 61px 150px;
+    margin: 40px 150px 24px 150px;
   }
 }
 
 .page-footer__bottom {
   @media (min-width: $tablet-width) {
-    height: 127px;
+    min-height: 110px;
     display: flex;
     justify-content: space-around;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-block: 30px;
   }
 }
 
@@ -37,12 +46,18 @@
   place-items: center;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    padding-top: 16px;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .page-footer__logo-link {
-  padding: 53px 0 55px;
+  padding: 42px 0 55px;
+
+  @media (min-width: $tablet-width) {
+    justify-self: left;
+    padding: 0;
+  }
 
   &:hover {
     --fill: #d22856;
@@ -60,6 +75,8 @@
   margin-top: 38px;
 
   @media (min-width: $tablet-width) {
+    justify-self: right;
     padding: 0;
+    margin-top: 0;
   }
 }
